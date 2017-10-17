@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>后台管理员导航</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../navigation/css/bootstrap.min.css" rel="stylesheet">
+<link href="../navigation/css/bootstrap-theme.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="../../common/css/common.css">
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="../Paper_management/css/addPaper.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							试卷管理<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu nav-style">
+							<li role="presentation"><a href="addPaper.html">上传试卷</a></li>
+							<li role="presentation"><a href="#">组卷管理</a></li>
+						</ul>
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+							练习册管理<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu nav-style">
+							<li role="presentation"><a href="addPaper.html">新增练习册</a></li>
+							<li role="presentation"><a href="#">编辑练习册</a></li>
+						</ul>
+					</li>
+					<li role="presentation"><a href="#">知识地图管理</a></li>
+					<li role="presentation"><a href="#">教材目录管理</a></li>
+					<li role="presentation"><a href="#">试题报错管理</a></li>
+					<li role="presentation"><a href="#">基础信息查看</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+<!--导航按钮栏-->
+
+	<div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置:</span>
+				<a href="#">试卷管理</a>
+				<span>&gt;</span>
+				<a href="addPaper.html">上传试卷</a>
+			</span>
+		</div>
+	</div>
+	
+<!-- 模态框 按钮 -->
+<div class="container">
+    <!--<div class="styleOne">
+        <div class="image"><img src="img/smartTest.png" alt="选题组卷图片"></div>
+        <div class="caption">
+	        <h3></h3>
+	        <p>限定知识范围、困难度和题型，系统智能出题。</p>
+	        <span><a href="smartTest.html" class="btn-green" role="button">智能组卷</a></span>
+        </div>
+    </div>
+    <div class="styleOne">
+	    <div class="thumbnail">
+	        <img src="img/selectTest.png" alt="智能组卷图片">
+	        <div class="caption">
+		        <h3>选题组卷</h3>
+		        <p>采用试题篮的方式，根据筛选条件手动选取试题组卷。</p>
+		        <span><a href="selectTest.html" class="btn-green" role="button">选题组卷</a></span>
+	        </div>
+	    </div>
+    </div>
+    <div class="styleOne">
+	    <div class="thumbnail">
+	        <img src="img/shareTest.png" alt="套题组卷图片">
+	        <div class="caption">
+		        <h3>套题组卷</h3>
+		        <p>根据试题备注信息，组建一整套试卷，包括真题模拟卷和各种练习册套题。</p>
+		        <span><a href="shareTest.html" class="btn-green" role="button">套题组卷</a></span>
+	        </div>
+	    </div>
+    </div>-->
+    <div class="creat_paper">
+		<div class="container-control">
+<!--						<div class="title">选择组卷方式</div>-->
+			<div class="title_list">
+				<div class="smart"><img src="img/smartTest.png"></div>
+				<p>限定知识范围、困难度和题型，系统智能出题。</p>
+				<span><button onclick="javascrtpt:window.location.href='smartTest.html'" class="btn-green">智能组卷</button></span>
+			</div>
+			<div class="title_list">
+				<div class="select"><img src="img/selectTest.png"></div>
+				<p>采用试题篮的方式，根据筛选条件手动选取试题组卷。</p>
+				<span><button onclick="javascrtpt:window.location.href='selectTest.html'" class="btn-green">选题组卷</button></span>
+			</div>
+			<div class="title_list">
+				<div class="share"><img src="img/shareTest.png"></div>
+				<p>根据试题备注信息，组建一整套试卷，包括真题模拟卷和各种练习册套题。</p>
+				<span><button onclick="javascrtpt:window.location.href='shareTest.html'" class="btn-green">套题组卷</button></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 模态框 -->
+	<!--<a href="selectTest.html" class="styleOne" data-toggle="modal" data-target="#myModal">选题组卷</a>
+	
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	    <div class="modal-dialog" role="document">
+	    	<div class="modal-content">
+	      		<div class="modal-header">
+	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        		<h4 class="modal-title" id="myModalLabel">请选择学段</h4>
+	     		</div>
+	      		<div class="modal-body">
+	        	...
+	      		</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn btn-primary">Save changes</button>
+		      	</div>
+	    	</div>
+	    </div>
+	</div>-->
+	
+
+<script src="../navigation/js/jquery-1.11.2.min.js"></script>
+<script src="../navigation/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

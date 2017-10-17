@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>查看试卷</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-datetimepicker.min.css" type="text/css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="css/watch_paper.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+			       		    <select class="form-control">
+							  <option>语文</option>
+							  <option>数学</option>
+							  <option>物理</option>
+							  <option>地理</option>
+							  <option>政治</option>
+							  <option>历史</option>
+							</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">
+					    	知识方法能力管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">知识</a></li>
+							<li role="presentation"><a href="javascript();">方法</a></li>
+							<li role="presentation"><a href="javascript();">能力</a></li>
+							<li role="presentation"><a href="javascript();">描述</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation">
+					    <a href="#">
+					    	图谱管理 
+					    	
+					    </a>
+					    
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">试题管理
+							<span class="caret"></span>
+						</a>
+						 <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">试题上传</a></li>
+							<li role="presentation"><a href="javascript();">试题审核</a></li>
+							
+					    </ul>
+					</li>
+					<li role="presentation"  class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">组卷管理
+							<span class="caret"></span>
+						</a>
+						 <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">试卷上传</a></li>
+							<li role="presentation"><a href="paper_manage.html">试卷管理</a></li>
+							
+					    </ul>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- <div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置:</span>
+				<a href="#"></a>
+			</span>
+		</div>
+	</div> -->
+	
+<div class="container">
+		<div class="wrapper">
+			<p class="text-right"><button class="btn btn-default" >下载word</button></p>
+			 <!--试卷开始 -->
+			<div>
+				 <div class="paper-title text-center" >高中数学随堂练习</div>
+				
+				 <div class="paper-checkbox">
+					<ul class="small-title">
+						<li><input type="checkbox" class="paper-knowledge"/><span>知识能力方法</span></li>
+						<li><input type="checkbox" class="paper-answer"/><span>答案与解析</span></li>
+						<li><input type="checkbox" class="paper-tishi"/><span>提示</span></li>
+					</ul>
+				</div>
+				 <!-- 第一大题开始 -->
+				 <div>
+				 	<div class="title-sub">一、单选题（共6小题，第一题5分，第二题6分，第三题8分）</div>
+				      <ul class="paper-text paper-text-1 list-unstyled">
+				         <!-- 第一小题开始 -->
+				      	<li>
+				      	  <div>1.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+								<div class="difficult-degree">
+									
+									<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案:</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析:</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+								<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+				      	</li>
+
+						<!-- 第二小题开始 -->
+				      	<li>
+				      	  <div>2.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+								<div class="difficult-degree">
+									
+									<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案:</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析:</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+								<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+				      	</li>
+
+				      </ul>
+				 </div>
+				<!-- 第一大题结束 -->
+
+
+				<!-- 第二大题开始 -->
+				 <div>
+				 	<div class="title-sub">二、完型填空（共6小题，第一题5分，第二题6分，第三题8分）</div>
+				      <ul class="paper-text paper-text-2 list-unstyled">
+				      	<li>
+				      	  <p> Hainan is in the south(南方)of China. The weather there is <u>&nbsp;&nbsp;11&nbsp;&nbsp;</u> from that of the north(北方)of China. There  <u>&nbsp;&nbsp;12&nbsp;&nbsp;</u>  no winter in Hainan. It is not <u>&nbsp;&nbsp;13&nbsp;&nbsp;</u>  all year round. Even in December, It isn’t cold. Many people go there in winter, <u>&nbsp;&nbsp;14&nbsp;&nbsp;</u> it’s cold in the north of China. In summer, it’s very hot. It’s usually sunny, but it often <u>&nbsp;&nbsp;15&nbsp;&nbsp;</u> suddenly(突然). So people often take raincoats at the  <u>&nbsp;&nbsp;16&nbsp;&nbsp;</u> time.
+				      	  <ul class="list-inline">
+				      	  		<li>11.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						  </ul>
+						  <div class="difficult-degree">
+								
+								<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+							</div>
+							<div class="answer-resolve">
+								<p>
+									<span class="difficult-degree-title">答案:</span>
+									<span>A</span>
+								</p>
+								<p>
+									<span class="difficult-degree-title">解析:</span>
+									<span>解析解析解析解析解析解析解析解析解析</span>
+								</p>
+							</div>
+							<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+							<ul class="list-inline">
+				      	  		<li>11.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						  </ul>
+						  <div class="difficult-degree">
+								
+								<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+							</div>
+							<div class="answer-resolve">
+								<p>
+									<span class="difficult-degree-title">答案:</span>
+									<span>A</span>
+								</p>
+								<p>
+									<span class="difficult-degree-title">解析:</span>
+									<span>解析解析解析解析解析解析解析解析解析</span>
+								</p>
+							</div>
+							<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+							<ul class="list-inline">
+				      	  		<li>11.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						  </ul>
+						  <div class="difficult-degree">
+								
+								<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+							</div>
+							<div class="answer-resolve">
+								<p>
+									<span class="difficult-degree-title">答案:</span>
+									<span>A</span>
+								</p>
+								<p>
+									<span class="difficult-degree-title">解析:</span>
+									<span>解析解析解析解析解析解析解析解析解析</span>
+								</p>
+							</div>
+							<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+							</div>
+							<ul class="list-inline">
+				      	  		<li>11.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						  </ul>
+						  <div class="difficult-degree">
+								
+								<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+									
+							</div>
+							<div class="answer-resolve">
+								<p>
+									<span class="difficult-degree-title">答案:</span>
+									<span>A</span>
+								</p>
+								<p>
+									<span class="difficult-degree-title">解析:</span>
+									<span>解析解析解析解析解析解析解析解析解析</span>
+								</p>
+							</div>
+							<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+				      	</li>
+				      </ul>
+				 </div>
+				<!-- 第二大题结束 -->
+
+				<!-- 第三大题开始 -->
+				 <div>
+				 	<div class="title-sub">三、阅读理解（每小题2分，共10分）</div>
+				      <ul class="paper-text paper-text-2 list-unstyled">
+				      	<li>
+				      	  <p> Hainan is in the south(南方)of China. The weather there is <u>&nbsp;&nbsp;21&nbsp;&nbsp;</u> from that of the north(北方)of China. There  <u>&nbsp;&nbsp;22&nbsp;&nbsp;</u>  no winter in Hainan. It is not <u>&nbsp;&nbsp;23&nbsp;&nbsp;</u>  all year round. Even in December, It isn’t cold. Many people go there in winter, <u>&nbsp;&nbsp;24&nbsp;&nbsp;</u> it’s cold in the north of China. In summer, it’s very hot. It’s usually sunny, but it often <u>&nbsp;&nbsp;25&nbsp;&nbsp;</u> suddenly(突然). So people often take raincoats at the  <u>&nbsp;&nbsp;26&nbsp;&nbsp;</u> time.
+				      	  <ul class="list-inline">
+				      	  		<li>21. Who wrote the story?</li>
+				      	  		<div class="question_img"></div>
+								<li>A. Rupert’s teacher.</li>
+								<li>B. The neighbour’s teacher.</li>
+								<li>C. A medical school teacher.</li>
+								<li>D. The teacher’s neighbour.</li>
+								</ul>
+								<div class="difficult-degree">
+									
+									<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案:</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析:</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+								<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+							<ul class="list-unstyled">
+				      	  		<li>22. Why did the teacher put a skeleton in his suitcase?</li>
+				      	  		<div class="question_img"></div>
+								<li>A. He needed it for the summer term in London.</li>
+								<li>B. He needed it for the lecture he was going to give.</li>
+								<li>C. He wanted to take it to Russia for medical research.</li>
+								<li>D. He wanted to take it home as he had finished his teaching.</li>
+								</ul>
+								<div class="difficult-degree">
+									
+									<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案:</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析:</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							<ul class="list-inline">
+				      	  		<li>21. Who wrote the story?</li>
+				      	  		<div class="question_img"></div>
+								<li>A. Rupert’s teacher.</li>
+								<li>B. The neighbour’s teacher.</li>
+								<li>C. A medical school teacher.</li>
+								<li>D. The teacher’s neighbour.</li>
+							</ul>
+							<div class="difficult-degree">
+									
+									<p>
+										<span class="difficult-degree-title">知识:</span>
+										<span>知识点一、知识点二</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">能力:</span>
+										<span>能力一、能力二</span>
+									</p><p>
+										<span class="difficult-degree-title">方法:</span>
+										<span>方法一、方法二</span>
+									</p>
+							</div>
+							<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案:</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析:</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+							</div>
+							<div class="solve_tishi">
+									<p>
+										<span class="difficult-degree-title">提示:</span>
+										<span>本题的解题思路是：本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是本题的解题思路是</span>
+									</p>
+									
+								</div>
+				      	</li>
+				      </ul>
+				 </div>
+				<!-- 第三大题结束 -->
+			</div>
+			 <!-- 试卷结束 -->
+
+        </div>
+</div>	
+	
+
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script src="js/watch_paper.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

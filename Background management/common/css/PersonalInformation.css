@@ -1,0 +1,163 @@
+/*公共菜单栏样式*/
+.MenuBar{
+	width: 100%;
+}
+    font-size: 13px;
+.MenuBar .list-inline{margin-left: 0px;}
+.MenuBar .nav-tabs {
+    border-bottom: none;
+}
+.MenuBar .nav-tabs>li{
+	padding: 0;
+	margin-bottom:0px;
+}
+.MenuBar .nav-tabs>li>a{
+	border: none;
+	border-radius:0px;
+	margin:0px;
+	background-color: #43B3AD;
+}
+.MenuBar .nav-tabs>li>a,.MenuBar .nav-tabs>li>a:focus,.MenuBar .nav-tabs>li>a:hover{
+	background-color:  #E6E6E6;
+	color:#000;
+}
+.MenuBar .nav-tabs>li.active>a,.MenuBar .nav-tabs>li.active>a:focus,.MenuBar .nav-tabs>li.active>a:hover{
+	background-color: #43B3AD;
+	color:#fff;
+	border:none;
+}
+.MenuBar a{
+	font-size: 120%;
+	font-weight: bold;
+	color: #fff;
+	text-decoration:none;
+}
+
+/*公共列表样式部分*/
+.LiLeft{
+	width: 30%;
+	float: left;
+	font-size: 130%;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	color:#43B3AD ;
+	display: inline-block;
+}
+.LiMiddle{
+	font-family: "Microsoft YaHei","Tahoma" ,"微软雅黑",sans-serif;font-weight:normal;font-size: 110%;
+	text-indent: 2em;
+	width: 50%;
+	margin-left: 15px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	float: left;
+	display: inline-block;
+}
+.LiRight{
+	width: 10%;
+	margin-left: 15px;
+	float: left;
+}
+/*公共 ChangeBox 样式*/
+.ChangeBox{
+	width: 50%;
+	margin: 0 auto;
+}
+.ChangeBox li{
+	height: 30px;
+	margin: 40px 0;
+}
+
+/*公共按钮部分*/
+.Determine-Cancel{
+	width: 30%;
+	margin: 30px auto;
+}
+.Determine-Cancel btn{
+	font-size: 120%;
+}
+.Determine{
+	width: 30%;
+	height: 30px;
+	float: right;
+	background-color:#43B3AD ;
+	color: #fff;
+}
+.Cancel{
+	width: 30%;
+	height: 30px;
+	float: left;
+	background-color:#F29A7F ;
+	color: #fff;
+}
+
+/*Glyphicons 字体图标样式*/
+.Wrong{
+	margin-left: 10px;
+	color: #F29A7F;
+	font-size: 180%;
+}
+.Right{
+	margin-left: 10px;
+	color: #43B3AD;
+	font-size: 180%;
+}
+/*图片插入样式部分*/
+.changeImg{
+	margin-left: 15px;
+	padding: 0;
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-top: -25px;
+}
+.changeImg img{
+	width: 80px;
+    height: 80px;
+}
+.changeImgButton{
+	width: 80px;
+    height: 80px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    display: inline-block;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    line-height: 20px;
+}
+.changeImgButton input{
+	position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+	cursor:pointer;
+}
+.changeImgButton:hover {
+    text-decoration: none;
+}	
+.demo{
+	padding:0px 30px;
+	margin-left: -15px;
+}
+.demo li{
+	text-align: left;
+}
+.demo .LiLeft {
+	width:15%;
+    display: inline-block;
+}
+.demo textarea{
+	margin-left: 15px;
+	width: 77%;
+	height: 150px;
+	display: inline-block;
+}
+
+
+
+

@@ -1,0 +1,119 @@
+/*组卷 */
+.paper-content{position: relative;}
+.paper-content h5{color:#FF6600;margin-top: -5px;margin-bottom: 20px;cursor: pointer;}
+.paper-content h5 a{color: inherit;}
+.paper-content  .radio-inline{margin-left:50px;}
+
+.paper-content-footer label{font-weight: normal;margin-right: 10px;color:#FF6600;}
+.paper-content-footer span{font-size: 24px;color:#FF6600;vertical-align: middle;}
+.paper-content-footer span:last-child{margin-right: 10px;}
+.page-daan dt,.page-daan dd{padding:5px 0px;}
+.page-daan dt{width:100px;text-align: center;background-color: #599C41;color:#fff;}
+.page-daan dd{position: relative;}
+.dl-horizontal dd{margin-left: 100px;}
+.page-daan dd:last-child{text-align: center;margin-top: 20px;}
+.recommend{margin-top: 20px;border-top:2px solid #ddd;padding: 10px 0px;}
+.recommend span{font-size: 24px; margin-right: 10px;vertical-align: middle;}
+.recommend a,.recommend label{margin-right: 30px;text-align: right;}
+
+/*边框圆角去掉*/
+.panel { border-radius: 0; }
+/*清除bootstrap样式*/
+.panel-body { padding: 0; }
+.table { margin-bottom: -1px; }
+
+input:hover { border: solid 1px #44B3AD; }
+.input-group-addon { background-color: #F7F7F7; cursor: pointer; }
+.input-group-addon:hover { background-color: #EEE; }
+
+/*导航部分修改*/
+.my-type { background: #F4F4F4; }  
+.my-type dt{    
+	text-align: center;
+	width: 100px;
+    margin-bottom: 0px;
+    color: #666;
+    height:32px;
+    line-height: 32px;
+    }
+.my-type dd{ margin-left: 100px;   background: #FFF; border-left: 1px solid #ccc; }
+.my-type a{ white-space: nowrap; padding:2px 10px; min-width: 60px;  display: inline-block; text-align: center; margin: 4px; }
+.my-type a:hover { color: #44B3AD; }
+.my-type a.active { background:#44B3AD; color:#fff; }
+
+
+/*-------------------新增css-----------------*/
+.paper-name { width: 68%; }
+
+.share-nav .panel-body{
+	padding: 0;
+}
+.share-content .panel-heading {
+	padding:0;
+	border-bottom: 1px solid #ccc;
+	height: 34px;
+}
+.share-content .panel-heading a {
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+}
+.share-content .panel-heading .two-btn {margin:0;padding:0;}
+.share-content .panel-heading .sort-buttons>label {
+	background:none;
+	border:none;
+	border-radius: 0;
+	padding:7px 15px;
+}
+
+.panel-heading .sort-buttons>label:hover { color:#44B3AD; }
+
+.panel-heading .sort-buttons>label.active {
+	background:#44B3AD;
+	color:#FFF;
+	border-right: 1px solid #ccc;
+}
+
+
+.share-content table tbody>tr {
+	border-bottom: 1px solid #ccc;
+}
+.share-content table tbody>tr>td {
+	border-top:none;
+}
+.share-content table tbody>tr>td a.slook_btn {
+	color:#44B3AD;
+}
+.share-content table tbody>tr>td a.u_show {
+	color:#44B3AD;
+	text-decoration: underline;
+}
+.time,.looknum {
+	color:#A1A1A1;
+}
+
+.table-striped .time { text-align: center; width: 9%; }
+
+/*分页样式*/
+#page{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#page a{
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	border:1px solid #ccc;
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 0 10px;
+}
+#page .active{
+	background-color: #44B3AD;
+	color:#fff;
+	border-color:#44B3AD;
+}
+#page span{
+	margin-right: 5px;
+}

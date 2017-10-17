@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>教材目录管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../navigation/css/bootstrap.min.css" rel="stylesheet">
+<link href="../navigation/css/bootstrap-theme.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link href="../../common/css/tree.css" rel="stylesheet" >
+<link rel="stylesheet" href="../../common/css/common.css">
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="../teach-knowledge/css/knowledge-management.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation" class="active"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置:</span>
+				<a href="#">教材目录管理</a>
+			</span>
+		</div>
+	</div>
+	
+	<div class="container my-style">
+		<label class="green">上传教材目录</label>
+		<div class="choose-box">
+			<div><label class="black">请选择上传的教材目录文件</label></div>
+			<div>
+				<span>
+					<input type="file" name="" size="15" input enctype="multipart/form-data" maxlength="100">
+					<a href="#">下载excel模板</a>
+				</span>
+			</div>
+			<div><button class="btn_search" value="选择文件">上传</button></div>
+		</div>
+	</div>
+	
+	<div class="container my-style container02">
+		<div>
+			<label class="green">编辑教材目录</label>
+			<div class="choose-box">
+				<div>
+					<label class="black">学段</label>
+					<select class="select-default"  id="textBook_stage2">
+						<option value="1">小学</option>
+						<option value="2">初中</option>
+						<option value="3">高中</option>
+					</select>
+				</div>
+				<div>
+					<label class="black">教材</label>
+					<select id="textBook_primary2" class="select-default">
+								<option>一年级上</option>
+								<option>一年级下</option>
+								<option>二年级上</option>
+								<option>二年级下</option>
+								<option>三年级上</option>
+								<option>三年级下</option>
+								<option>四年级上</option>
+								<option>四年级下</option>
+								<option>五年级上</option>
+								<option>五年级下</option>
+								<option>六年级上</option>
+								<option>六年级下</option>
+							</select>
+							<select id="textBook_junior2"  class="select-default">
+								<option>七年级上</option>
+								<option>七年级下</option>
+								<option>八年级上</option>
+								<option>八年级下</option>
+								<option>九年级上</option>
+								<option>九年级下</option>
+							</select>
+							<select id="textBook_senior2"  class="select-default">
+								<option>高一上</option>
+								<option>高一下</option>
+								<option>高二上</option>
+								<option>高二下</option>
+								<option>高三上</option>
+								<option>高三下</option>
+							</select>
+				</div>
+				
+				<div>
+					<label class="black">出版社</label>
+					<select class="select-default">
+						<option value="人教版">人教版</option>
+						<option value="苏教版">苏教版</option>
+					</select>
+				</div>
+				<div>
+					<label class="black">版次</label>
+					<select class="select-default">
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+					</select>
+				</div>
+				<button class="btn_search_margin btn_search">查询</button>
+			</div>
+		</div>
+		<div class="box-group">
+			<div class="box1">
+				<label>教材目录</label>
+			</div>
+			<div class="box2">
+				<div class="box2-style"><label class="black">章节编号</label>
+					<form class="edit-ture">
+						<input type="text" value="1-1" disabled="disabled">
+					</form>
+				</div>
+				<div class="box2-style"><label class="black">章节名称</label>
+					<form class="edit-ture">
+						<input type="text" value="正数和负数" disabled="disabled">
+					</form>
+				</div>
+				<div class="box2-style"><label class="black">知识点</label>
+					<form>
+						<ul>
+							<li class="teach_mulu_list">
+								<span class="knowledge_delete"><img src="img/analasis2.png" ></span>
+								<input type="text" value="1-1-1知识点1" disabled="disabled">
+							</li>
+							<li class="teach_mulu_list">
+								<span class="knowledge_delete"><img src="img/analasis2.png" ></span>
+								<input type="text" value="1-1-2知识点2" disabled="disabled">
+							</li>
+							<li class="teach_mulu_list">
+								<span class="knowledge_delete"><img src="img/analasis2.png" ></span>
+								<input type="text" value="1-1-2知识点2" disabled="disabled">
+							</li>
+							<li class="teach_mulu_list">
+								<span class="knowledge_delete"><img src="img/analasis2.png" ></span>
+								<input type="text" value="1-1-4知识点4" disabled="disabled">
+							</li>
+							<li class="teach_mulu_list">
+								<input type="text" id="add_know1" value="+&nbsp;&nbsp;&nbsp;添加知识点">
+							</li>
+					</form>
+					
+				</div>
+				<!-- <div class="box2-style"><label class="black">后备知识点</label>
+					<form>
+						<input type="text" value="2-1-1知识点1" disabled="disabled">
+						<input type="text" value="2-1-2知识点2" disabled="disabled">
+						<input type="text" value="2-1-3知识点3" disabled="disabled">
+						<input type="text" value="2-1-4知识点4" disabled="disabled">
+					</form>
+					<div id="choose2" class="btn-group"><a href="#">编辑知识点</a></div>
+				</div> -->
+				<div class="btn-group">
+					<button class="btn-yellow edit-btn">放弃</button>
+					<button class="btn_search edit-btn" id="edit_kbowledge">编辑</button>
+				</div>
+			</div>
+			<div class="box3">
+				<label>知识点</label>
+			</div>
+		</div>
+	</div>
+
+<!--导航按钮栏-->
+
+<script src="../navigation/js/jquery-1.11.2.min.js"></script>
+<script src="../navigation/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../common/js/tree.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+<script src="../teach-knowledge/js/knowledge-management.js"></script>
+</body>
+</html>

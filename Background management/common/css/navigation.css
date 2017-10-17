@@ -1,0 +1,79 @@
+/*顶部导航*/
+* { font-family: "Microsoft YaHei","Tahoma" ,"微软雅黑", sans-serif; font-size: 14px; }
+
+/*重置bootstrap样式文字*/
+a { color: #000; }
+a:hover { color: #44B3AD; }
+
+.header{
+	width: 100%;
+	background-color: #E0E0E0;
+}
+.container-fluid{
+	padding: 0;
+	margin: 0;
+}
+.header ul{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.headerCon{
+	padding: 7px;
+	height: 60px;
+}
+.headerRight{
+	margin-top: 10px;
+}
+.headerRight ul>li{
+	margin-right: 20px;
+}
+
+.header .pull-left .text-cha{
+	color: #33363F;
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+	letter-spacing:8px;
+}
+.header .pull-left .text-eng{
+	font-size: 12px;
+	display: block;
+}
+.header .pull-right ul>li{
+	font-size: 16px;
+}
+.header .pull-right ul>li.login{
+	cursor:pointer;
+	color: #368F8A;
+}
+
+.my-nav{
+	padding: 0;
+}
+.my-navbar{
+	padding-bottom: 5px;
+	background-color: #43D5CA;
+}
+.navbar{
+	border: none;
+	margin-bottom: 0;
+}
+
+.my-nav .navbar-nav li:first-child{ border-right: 2px solid #ddd; }
+.my-nav .navbar-nav { border-right: 2px solid #ddd; border-left: 2px solid #ddd; }
+.my-nav .navbar-nav li{ padding-left:5px; padding-right: 5px; }
+
+/*头像*/
+.my-nav .person{width: 45px; height: 45px; margin: -15px 0px;border-radius: 50px;}
+
+.my-subnav{margin-top: -10px;background-color: #599C41;border-radius: 5px;}
+.my-subnav>li{padding:5px 0px;}
+.my-subnav a{color:#fff;padding:5px 0px;position: relative;border-left:1px solid #fff;}
+
+/*按钮导航*/
+.nav-pills { background-color: #EEE; }
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover { background:#44B3AD ; color:#FFF }
+.nav-pills>li>a { padding: 6px 20px; border-radius: 0; }
+.nav-pills>li+li { margin: 0; border-left:solid 1px #DDD ; }
+

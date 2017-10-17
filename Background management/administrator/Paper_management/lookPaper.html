@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>查看试卷</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-datetimepicker.min.css" type="text/css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link href="css/lookPaper.css" rel="stylesheet" >
+<link rel="stylesheet" href="../../common/css/tree.css">
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown active">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>
+	  	
+	</nav>
+	
+<div class="container">
+	<div class="position_information">
+		<span class="home_img"></span>
+		<span class="position_content">
+			<span>您目前的位置:</span>
+			<a href="#">组卷管理</a>
+			<span>&gt;</span>
+			<a href="#">查看试卷</a>
+		</span>
+	</div>
+</div>
+	
+<div class="container">
+		<div class="wrapper">
+			<p class="text-right"><button class="paper-save btn btn-default">保存</button><button class="paper-edit btn btn-default">编辑</button><button class="btn btn-green publish-btn" data-toggle="modal" data-target="#myModal-publish" >一键发布</button><button class="btn btn-default  paper-word-down">下载word</button><a href="selectTest.html" class="paper-add-test"><button class="btn btn-default">再加点题</button></a></p>
+			 <!--试卷开始 -->
+			<div>
+				<div class="paper-title text-center">高中数学随堂练习（难度系数：****）-20150623</div>
+				<div class="paper-from text-center">
+
+					<label class="radio-text">适用年级：</label><label class="radio-inline">
+					<input type="radio" name="grade" checked="checked" id="" value="option1"> 七年级
+					</label>
+
+					<label class="radio-inline">
+					<input type="radio" name="grade" id="" value="option1"> 八年级
+					</label>
+
+					<label class="radio-inline">
+					<input type="radio" name="grade" id="" value="option1"> 九年级
+					</label>
+
+					<label class="radio-text">建议时长：</label>
+					<input type="number" min="0" value="120" style="width: 6%; text-align: center;">分钟
+					
+					<label class="radio-text">试卷总分：<span class="change">120分</span></label>
+					
+					
+				</div>
+				<div class="paper-checkbox">
+					<ul class="small-title">
+						<li>适用年级：<span class="change">九年级</span></li>
+						<li>建议时长：<span class="change">120分钟</span></li> 
+						<li>试卷总分：<span class="change">120分</span></li> 
+					</ul>
+					<ul class="small-title">
+						<li class="paper-knowledge"><input type="checkbox"/><span>难度与知识点</span></li>
+						<li class="paper-answer"><input type="checkbox"/><span>答案与解析</span></li>
+					</ul>
+				</div>
+				 <!-- 第一大题开始 -->
+				 <div class="big-topic">
+				 	<div class="title-sub">一、单选题（共6小题，第一题5分，第二题6分，第三题8分）</div>
+				      <ul class="paper-text paper-text-1 list-unstyled">
+				         <!-- 第一小题开始 -->
+				      	<li>
+				      	  	<div>1.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  	<ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+							</ul>
+							<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							
+				      	</li>
+
+						<!-- 第二小题开始 -->
+				      	<li>
+				      	  	<div>2.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  	<ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+							</ul>
+							<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+				      	</li>
+
+				      </ul>
+				 </div>
+				<!-- 第一大题结束 -->
+
+
+				<!-- 第二大题开始 -->
+				 <div>
+				 	<div class="title-sub">二、完型填空（共6小题，第一题5分，第二题6分，第三题8分）</div>
+				      <ul class="paper-text paper-text-2 list-unstyled">
+				      	<li>
+				      	  <p> Hainan is in the south(南方)of China. The weather there is <u>&nbsp;&nbsp;11&nbsp;&nbsp;</u> from that of the north(北方)of China. There  <u>&nbsp;&nbsp;12&nbsp;&nbsp;</u>  no winter in Hainan. It is not <u>&nbsp;&nbsp;13&nbsp;&nbsp;</u>  all year round. Even in December, It isn’t cold. Many people go there in winter, <u>&nbsp;&nbsp;14&nbsp;&nbsp;</u> it’s cold in the north of China. In summer, it’s very hot. It’s usually sunny, but it often <u>&nbsp;&nbsp;15&nbsp;&nbsp;</u> suddenly(突然). So people often take raincoats at the  <u>&nbsp;&nbsp;16&nbsp;&nbsp;</u> time.
+    Hainan is a good <u>&nbsp;&nbsp;17&nbsp;&nbsp;</u>  to go for holidays and have fun. We can <u>&nbsp;&nbsp;18&nbsp;&nbsp;</u> fishing,swimming and so on. When we want <u>&nbsp;&nbsp;19&nbsp;&nbsp;</u>  a rest, we can lie on the beach(海滩)and <u>&nbsp;&nbsp;20&nbsp;&nbsp;</u>  the blue sky(天空) and the white clouds.</p>
+				      	  <ul class="list-inline">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">11.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+							</ul>
+							<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							<ul class="list-inline">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">12.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+							</ul>
+							<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+						<ul class="list-inline">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">13.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+							</ul>
+							<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+						<ul class="list-inline">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">14.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						</ul>
+						<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+								<ul class="list-inline">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">15.</li>
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+								<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+				      	</li>
+				      </ul>
+				 </div>
+				<!-- 第二大题结束 -->
+
+				<!-- 第三大题开始 -->
+				 <div>
+				 	<div class="title-sub">三、阅读理解（每小题2分，共10分）</div>
+				      <ul class="paper-text paper-text-2 list-unstyled">
+				      	<li>
+				      	  <p> Hainan is in the south(南方)of China. The weather there is <u>&nbsp;&nbsp;21&nbsp;&nbsp;</u> from that of the north(北方)of China. There  <u>&nbsp;&nbsp;22&nbsp;&nbsp;</u>  no winter in Hainan. It is not <u>&nbsp;&nbsp;23&nbsp;&nbsp;</u>  all year round. Even in December, It isn’t cold. Many people go there in winter, <u>&nbsp;&nbsp;24&nbsp;&nbsp;</u> it’s cold in the north of China. In summer, it’s very hot. It’s usually sunny, but it often <u>&nbsp;&nbsp;25&nbsp;&nbsp;</u> suddenly(突然). So people often take raincoats at the  <u>&nbsp;&nbsp;26&nbsp;&nbsp;</u> time.
+    Hainan is a good <u>&nbsp;&nbsp;27&nbsp;&nbsp;</u>  to go for holidays and have fun. We can <u>&nbsp;&nbsp;28&nbsp;&nbsp;</u> fishing,swimming and so on. When we want <u>&nbsp;&nbsp;29&nbsp;&nbsp;</u>  a rest, we can lie on the beach(海滩)and <u>&nbsp;&nbsp;30&nbsp;&nbsp;</u>  the blue sky(天空) and the white clouds.</p>
+				      	 	 <ul class="list-unstyled">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">21. Who wrote the story?</li>
+								<li>A. Rupert’s teacher.</li>
+								<li>B. The neighbour’s teacher.</li>
+								<li>C. A medical school teacher.</li>
+								<li>D. The teacher’s neighbour.</li>
+							</ul>
+								<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							<ul class="list-unstyled">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">22. Why did the teacher put a skeleton in his suitcase?</li>
+								<li>A. He needed it for the summer term in London.</li>
+								<li>B. He needed it for the lecture he was going to give.</li>
+								<li>C. He wanted to take it to Russia for medical research.</li>
+								<li>D. He wanted to take it home as he had finished his teaching.</li>
+								</ul>
+								<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							<ul class="list-unstyled">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">21. Who wrote the story?</li>
+								<li>A. Rupert’s teacher.</li>
+								<li>B. The neighbour’s teacher.</li>
+								<li>C. A medical school teacher.</li>
+								<li>D. The teacher’s neighbour.</li>
+								</ul>
+								<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+							<ul class="list-unstyled">
+				      	  		<li><input type="number" min="0" class="form-control smmall-score">22. Why did the teacher put a skeleton in his suitcase?</li>
+								<li>A. He needed it for the summer term in London.</li>
+								<li>B. He needed it for the lecture he was going to give.</li>
+								<li>C. He wanted to take it to Russia for medical research.</li>
+								<li>D. He wanted to take it home as he had finished his teaching.</li>
+								</ul>
+								<div class="difficult-degree">
+									<p>
+										<span class="difficult-degree-title">难度：</span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_yellow"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+										<span class="glyphicon glyphicon-star start_gray"></span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">知识点：</span>
+										<span>知识点一、知识点二</span>
+									</p>
+								</div>
+								<div class="answer-resolve">
+									<p>
+										<span class="difficult-degree-title">答案：</span>
+										<span>A</span>
+									</p>
+									<p>
+										<span class="difficult-degree-title">解析：</span>
+										<span>解析解析解析解析解析解析解析解析解析</span>
+									</p>
+								</div>
+				      	</li>
+				      </ul>
+				 </div>
+				<!-- 第三大题结束 -->
+			</div>
+			 <!-- 试卷结束 -->
+
+        </div>
+</div>
+<div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> 
+<!-- 修改大题名 -->
+<div class="modal fade" id="myModal-title" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+<!--    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         	修改题名
+      </div>
+      <div class="modal-body">
+          <form class="form-horizontal">
+				<div class="form-group">
+				<label class="col-sm-2 control-label">大题名</label>
+				<div class="col-sm-10">
+				<input type="text" class="form-control" placeholder="单选题">
+				</div>
+				</div>
+				<div class="form-group">
+				<label  class="col-sm-2 control-label">备注</label>
+				<div class="col-sm-10">
+				<textarea class="form-control" rows="3"></textarea>
+				</div>
+ 				 </div>
+ 				 </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green" data-dismiss="modal">确认修改</button>
+      </div>
+    </div>-->
+    <div class="modal-content">
+      <div class="modal-header change-ques">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		修改题名
+      </div>
+      <div class="modal-body">
+            <div class="row">
+            	<div class="col-md-2">大题名</div>
+            	<div class="col-md-10">
+					<input type="text" class="form-control text-left change-key" value="单选题" >
+            	</div>
+            </div>
+            <div  class="row look-know"> 
+            	<div class="col-md-2">备注</div>
+				<div class="col-md-10">
+					<textarea class="form-control text-left change-key " rows="3" style="height: 180px;"></textarea>
+				</div>
+            </div>
+                    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green" data-dismiss="modal">确认修改</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- 修改大题名 -->
+
+<!-- 换题 -->
+<div class="modal fade" id="myModal-change" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header change-ques">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		换题
+      </div>
+      <div class="modal-body">
+                    <div class="row">
+                    	<div class="col-md-2">关键词</div>
+                    	<div class="col-md-10">
+							<input type="text" class="form-control text-left change-key" placeholder="可省略" >
+                    	</div>
+                    </div>
+                    <div  class="row look-know"> 
+                    	<div class="col-md-2">知识点</div>
+                    	<div class="col-md-10">
+                    		 <ul class="list-inline outline">
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>知识点一的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<a href="#" class="paper-add-know glyphicon text-left btn btn-green" >添加知识点</a>
+					       </ul>
+                    	</div>
+                    </div>
+                    <div  class="row look-section"> 
+                    	<div class="col-md-2">教材章节</div>
+                    	<div class="col-md-10">
+                    		 <ul class="list-inline outline">
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<li>教材章节的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								<a href="#" class="paper-add-know glyphicon text-left btn btn-green" >添加章节</a>
+					       </ul>
+                    	</div>
+                    </div>
+                     <div  class="row"> 
+                    	<div class="col-md-2">难度</div>
+                    	<div class="col-md-10">
+                    		 	<a href="#" class="my-star my-star-1 glyphicon glyphicon-star"></a>
+			               		<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+			               		<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+			               		<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+			               		<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+			               		<a href="#" class="no-limit">不限</a>
+                    	</div>
+                    </div>
+                    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green" data-toggle="modal" data-target="#myModal-change-hand">手动选题</button>
+        <button type="button" class="btn btn-green" data-dismiss="modal">自动选题</button>
+      </div>
+    </div>
+    <!--树结构开始-->
+    <div class="treeWrap left_content">
+				<div>
+					  <!--位置2：树导航 添加类名nav-tree-->
+					  <ul class="nav nav-tabs nav-justified my-tab nav-tree" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">教材目录</a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">知识点</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home">
+								<div class="panel panel-default first-nav">
+								  <div class="panel-body my-panel">
+								    <ul class="list-inline tab-list-style">
+														<li class="active"><a href="#">人教版</a></li>
+														<li><a href="#">苏教版</a></li>
+														<li><a href="#">人教版</a></li>
+														<a class="more" href="#">更多</a>
+													</ul>
+								  </div>
+								</div>
+								<div class="panel panel-default">
+								  <div class="panel-body my-panel">
+													<ul class="list-inline tab-list-style">
+														<li class="active"><a href="#">七年级上</a></li>
+														<li><a href="#">七年级下</a></li>
+														<li><a href="#">八年级上</a></li>
+														<a class="more" href="#">更多</a>
+													</ul>
+								  </div>
+								</div>
+								<div  class="panel panel-default">
+								     <div class="panel-body my-panel">
+									 	<ul id="treeDemo" class="ztree"></ul>
+									 </div>
+								</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane" id="profile">
+								<div  class="panel panel-default">
+								     <div class="panel-body my-panel">
+									 	<ul id="treeDemo1" class="ztree"></ul>
+									 </div>
+								</div>
+						</div>
+					  </div>
+
+				</div>
+
+			</div>	
+    	 <!--树结构结束-->
+        <!--<div class="treeWrap"><p><a href="#" class="closeKnowBtn">&times;</a></p>-->
+                <!-- Nav tabs -->
+					<!--  <ul class="nav nav-tabs nav-justified my-tab" role="tablist">
+					    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">教材</a></li>
+					    <li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">知识点</a></li>
+					  </ul>-->
+
+					  <!-- Tab panes -->
+					 <!-- <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane" id="home">
+								<div class="panel panel-default">
+								  <div class="panel-body my-panel">
+								    <ul class="list-inline tab-list-style">
+														<li class="active"><a href="#">人教版</a></li>
+														<li><a href="#">苏教版</a></li>
+														<li><a href="#">人教版</a></li>
+														<li><a href="#">更多</a></li>
+													</ul>
+								  </div>
+								</div>
+								<div class="panel panel-default">
+								  <div class="panel-body my-panel">
+													<ul class="list-inline tab-list-style">
+														<li class="active"><a href="#">七年级上</a></li>
+														<li><a href="#">七年级下</a></li>
+														<li><a href="#">八年级上</a></li>
+														<li><a href="#">更多</a></li>
+													</ul>
+								  </div>
+								</div>
+								<div  class="panel panel-default">
+								     <div class="panel-body my-panel">
+									 	<ul id="treeDemo" class="ztree"></ul>
+									 </div>
+								</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane active" id="profile">
+								<div  class="panel panel-default">
+								     <div class="panel-body my-panel">
+									 	<ul id="treeDemo1" class="ztree"></ul>
+									 </div>
+								</div>
+						</div>
+					  </div>
+		</div>-->
+  </div>
+</div>
+<!-- 换题 -->
+
+<!--手动换题 -->
+<div class="modal fade bs-example-modal-lg" id="myModal-change-hand" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header hand-change">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         	<div>
+         		<label class="radio-inline">
+					<input type="radio" name="change-ques" checked="checked" id="inlineRadio1" value="option1"> 默认
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="change-ques" id="inlineRadio2" value="option2"> 班级重点题库
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="change-ques" id="inlineRadio3" value="option3"> 试题收藏夹
+				</label>
+				<nav class="pages r">
+					  <ul class="list-inline">
+					    <li>
+					      <a href="#">上一页
+					      </a>
+					    </li>
+					    <li class="text">
+					    	共<label style="color: #FFF;">&nbsp;99&nbsp;</label>题
+					    </li>
+					    <li>
+					      <a href="#">下一页
+					      </a>
+					    </li>
+					  </ul>
+				</nav>
+         	</div>
+      </div>
+      <div class="modal-body boxSize-lookpaper">
+             <ul class="paper-text paper-text-3 list-unstyled">
+				         <!-- 第一小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>1.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)题目过长题目过长题目过长题目过长题目过长题目过长of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+						  </ul>
+						<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+
+						<!-- 第二小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>2.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      	<!-- 第三小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>3.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li><!-- 第四小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>4.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like如果过长的话如果过长的话如果过长的话如果过长的话如果过长的话如果过长的话如果过长的话如果过长的话如果过长的话</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li><!-- 第五小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>5.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li><!-- 第六小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>6.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      	<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      	
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+				      		<!-- 第七小题开始 -->
+				      	<li data-type = "0">
+				      	  <div>7.Hainan is in the south(南方)of China. The weather there is from that of the north(北方)of China().</div>
+				      	  <ul class="list-inline">
+								<li>A same</li>
+								<li>B like</li>
+								<li>C same</li>
+								<li>D like</li>
+								</ul>
+							<dl  class="dl-horizontal know-ans">
+						<dt>难度：</dt>
+						<dd><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> </dd>
+						<dt>知识点：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						<dt>答案：</dt>
+						<dd>故选C。</dd>
+						<dt>解析：</dt>
+						<dd>2根据上文判断，本句意思为“（海南在中国南方），气候与中国北方不同”，be different from表示“与…不同”，故选C。</dd>
+						</dl>
+				      	</li>
+
+	         </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- 手动换题 -->
+
+<!-- 报错 -->
+<div class="modal fade" id="myModal-error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header change-ques">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title">挑错</h4>
+      </div>
+      <div class="modal-body">
+             <p>错误描述</p>
+             <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-grey">取消</button>
+       <button type="button" class="btn btn-green" data-dismiss="modal">提交</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 报错 -->
+
+<!-- 一键发布 -->
+<div class="modal fade" id="myModal-publish" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <h4 class="modal-title">一键发布</h4>
+      </div>
+      <div class="modal-body body-else">
+            <dl  class="dl-horizontal publish-type">
+						<dt>测试方式</dt>
+						<dd class="publish-select publish-select-type"> 
+						    <a href="#" class="active">在线作业</a>
+						    <a href="#" class="online-test">在线测试</a>
+						    <a href="#" class="offline-test">纸笔测试</a>
+						</dd>
+						<dt>名称</dt>
+						<dd><input type="text" class="form-control text-left change-key"></dd>
+						<dt>班级</dt>
+						<dd class="publish-select publish-select-class">
+							<a href="#" id="all" class="active">全部</a>
+						    <a href="#">高一（4）班</a>
+						    <a href="#">高一（8）班</a>
+						</dd>
+						<dt>截止日期</dt>
+						<dd>
+								<div class="pull-left radio_lists">
+									<label class="radio-inline">
+									<input type="radio" name="time" id="inlineRadio1" value="option1" checked="checked"> 一天
+									</label>
+									<label class="radio-inline">
+									<input type="radio" name="time" id="inlineRadio2" value="option2"> 两天
+									</label>
+									<label class="radio-inline">
+									<input type="radio" name="time" id="inlineRadio3" value="option3"> 三天
+									</label>
+									<label class="radio-inline">
+									<input type="radio" name="time" id="inlineRadio4" value="option4"> 其他
+									</label>
+								</div>
+								<div class="input-group date form_date_1 pull-right" data-date="" data-date-format="" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" >
+						           <input class="form-control" size="16" type="text" value="">
+						           <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+							    </div>
+						</dd>
+						</dl>
+				<div class="publish-open-box">
+				<p class="text-right" style=" margin: 4px 0 4px 0; font-size: 14px;"><a href="#" class="publish-open">展开详情<span class="glyphicon glyphicon-menu-down"></span></a></p>
+				<dl class="dl-horizontal publish-type publish-type-test">
+					<dt>测试时长</dt>
+					<dd><input type="text" class="form-control text-left change-key" value="120" style="width: 20%"><span style="font-weight: normal;color: #000000; font-size: 14px;">&nbsp;分钟</span></dd>
+					<dt>测试类型</dt>
+					<dd>
+						<label class="radio-inline">
+						<input type="radio" name="type" checked="checked" id="inlineRadio1" value="option1"> 随堂考
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="type" id="inlineRadio2" value="option2"> 周考
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="type" id="inlineRadio3" value="option3"> 月考
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="type" id="inlineRadio3" value="option3"> 模拟考
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="type" id="inlineRadio3" value="option3"> 期中考
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="type" id="inlineRadio3" value="option3"> 期末考
+						</label>
+					</dd>
+					<dt>重要性</dt>
+					<dd>
+						<label class="radio-inline">
+						<input type="radio" name="important" checked="checked" id="inlineRadio1" value="option1"> 不重要
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="important" id="inlineRadio2" value="option2"> 一般
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="important" id="inlineRadio3" value="option3"> 重要
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="important" id="inlineRadio3" value="option3"> 非常重要
+						</label>
+					</dd>
+				</dl>
+				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green paper-save-submit" data-dismiss="modal">确认发布</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 一键发布 -->
+
+
+<div class="modal fade" id="myModal-save" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-body" style="min-height:100px ;">
+             <p class="text-center">操作成功，&nbsp;<label id="time">3</label>&nbsp;秒后返回<span>&nbsp;我的试卷库&nbsp;</span></p>
+             <p class="text-center"><a href="myPaperLibrary.html">点击直接跳转</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="../../common/js/jquery.ztree.core.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="js/lookPaper.js"></script>
+<script src="../../common/js/tree.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

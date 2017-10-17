@@ -1,0 +1,61 @@
+.wrapper>p>button{margin-right: 10px;}
+.paper-title{margin-top: 20px;font-size: 24px;font-weight: bold;padding:5px 0px;}
+.paper-title label{color:#FF6600;font-size:16px;}
+.paper-add-test{display: none;}
+.paper-from{margin:10px 0px 60px 0px;display: none;}
+.paper-from .radio-text{margin-left: 30px;}
+.text-small{margin-top: 30px;margin-bottom: 10px;display: block;}
+.paper-text>li{margin-top: 20px;padding:5px 5px;}
+.paper-text p{text-indent: 2em;}
+.paper-text>ul>ul{margin-top: 5px;}
+.paper-text ul.list-unstyled li:not(:first-child){margin-left: 20px;}
+.title-sub{font-size: 18px;font-weight: bold;margin-top: 10px;padding:5px 0px;}
+
+/*新增checkbox*/
+.paper-checkbox{
+	text-align: center;
+	margin-top:20px;
+}
+.small-title{
+	overflow: hidden;
+	padding: 5px 0;
+}
+.small-title li{
+	/*float:left;*/
+	display: inline;
+	margin-right:30px;
+}
+.small-title li input{
+	margin: -1px 3px 0 0;
+}
+.difficult-degree,.answer-resolve,.solve_tishi{
+	background-color: #f2f2f2;
+	display: none;
+}
+.difficult-degree  p,.answer-resolve  p,.solve_tishi p{
+	text-indent: 0;
+	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*vertical-align: middle;*/
+}
+.difficult-degree span,.answer-resolve span,.solve_tishi span{
+	margin-left: 5px;
+}
+.difficult-degree-title{
+	letter-spacing: 0.6em;
+}
+.difficult-degree .glyphicon{
+	display: inline;
+	font-size:20px;
+}
+.start_gray{
+	color:#DDDDDD;
+}
+.start_yellow{
+	color:#F1AD4D;
+}
+/*fugai*/
+.list-unstyled ul{
+	float: none;
+}

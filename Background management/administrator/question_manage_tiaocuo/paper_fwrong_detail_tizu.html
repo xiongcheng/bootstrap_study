@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>试题挑错_题组</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-datetimepicker.min.css" type="text/css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link href="css/selectTest.css" rel="stylesheet" >
+<link href="css/titleAnswer.css" rel="stylesheet" >
+<link href="../../common/css/tree.css" rel="stylesheet" >
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="css/watch_paper.css">
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation" class="active"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+	
+	<div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置：</span>
+				<a href="paper_exam.html">挑错管理</a>
+				<span>&gt;</span>
+				<a href="addPaper.html">报错详情——题组</a>
+			</span>
+		</div>
+	
+	<!--历次挑错信息-->
+	<div class="fWrong_lici">
+		<div class="find_wrong_header">
+			<h1>报错详情</h1>
+			<div class="question_wrong_msg">
+				<span>挑错次数：<span class="question_wrong_num">10</span></span>
+				<span>处理状态：<span class="question_wrong_zt">未处理</span></span>
+				
+			</div>
+			<button class="question_wrong_deal btn_deal_with">报错处理</button>
+			<div class="text-center num-page">
+				<span class="page_btn">&lt;</span>
+				<span class="num orange">1</span>/<span class="num">100</span>
+				<span class="page_btn">&gt;</span>
+			</div>
+			<div class="jump_to">
+				<span style="margin-right: 0;">跳转到第</span>
+				<input type="number" class="paper_jump" />
+				<span style="margin-right: 0;">页</span>
+				<button class="jump_to_btn btn_green">跳转</button>
+			</div>
+		</div>
+		<!--每次挑错的内容-->
+		<div class="find_wrong_content">
+			<div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div>
+			<div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					1、因为对所学知识一知半解或似是而非，导致对题目理解错误或方法错误；2、方法正确，只是抄错看错或算错。前者需要对题目所涉及的知识与方法做细致的分析，分析可以包含两方面：①为什么会错，是哪个知识不了解或那种方法没掌握；②正确的知识或方法是什么。后者只需要分析是哪里错了就可以了。 以下看看一部分做的比较好的分析： 朱哲敏：第一个红圈中的分析是属于看错，只要说出哪里看错了就行了；第二个红圈中的分析是把-a当负数了，那么这就是知识掌握不牢固的问题了。因此就要分析到因为a<0，所以-a>0，这一错误的根本所在。
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div><div class="wrong_detail">
+				<span class="find_wrong_text">
+					挑错内容（这道题的那那那那那错了……）
+				</span>
+				<span class="find_wrong_people">邓珍珍</span>
+				<span class="find_wrong_date">2016-06-27</span>
+			</div>
+		</div>
+		
+	</div>
+	<!--关闭和展开按钮-->
+	<div class="hide_show_btn" data-text="收起">收起<span class="glyphicon glyphicon-menu-up"></span>
+	</div>
+	<!--试题详情-->
+<div class="paper_detail">
+		<div class="paper_header">
+			<h1>试题详情</h1>
+			<div class="question_operate_wrong">
+				
+			    <a class="question_modify" href="question_modify_tizu.html" target="_blank">
+			    	<img src="img/modify_icon.png"/>
+					<span>修改</span>
+			    </a>
+			    <a class="question_resubmit" href="add_question.html" target="_blank">
+			    	<img src="img/re_submit.png"/>
+					<span>重新上传</span>
+			    </a>
+			</div>
+			
+		</div>
+		<div class="detail-container">
+			<table class="table table-bordered">
+				<tr class="question_msg">
+					<td width="10%" nowrap="nowrap" class="table_bold">试题编号：</td>
+					<td width="15%" nowrap="nowrap">yp53ttl3Au101</td>
+					<td width="10%" nowrap="nowrap" class="table_bold">题型：</td>
+					<td width="10%" nowrap="nowrap">
+						<div class="div_change">单选</div>
+						
+					</td>
+					<td width="10%" nowrap="nowrap" class="table_bold">诊断题：</td>
+					<!-- 0表示非诊断题；1表示诊断题。-->
+					<td width="5%" nowrap="nowrap">
+						<div class="div_change">是</div>
+						
+					<td width="10%" nowrap="nowrap" class="table_bold">适用年级：</td>
+					<td width="10%" nowrap="nowrap">
+						<div class="div_change">九年级</div>
+						
+					</td>
+					<td width="20%" nowrap="nowrap" colspan="2">
+						<a class="download_paper" href="#">下载试题</a>
+					</td>
+				</tr>
+				<tr class="question_msg">
+					<td nowrap="nowrap" class="table_bold">上传时间：</td>
+					<td nowrap="nowrap">2016-08-14</td>
+					<td nowrap="nowrap" class="table_bold">题库类型：</td>
+					<td nowrap="nowrap">
+						<div class="div_change">诊断题</div>
+						
+					</td>
+					<td nowrap="nowrap" class="table_bold">常考题：</td>
+					<!-- 0表示非常考题；1表示常考题。-->
+					<td nowrap="nowrap">
+						<div class="div_change">是</div>
+						
+					</td>
+					<td nowrap="nowrap" class="table_bold">审核状态：</td>
+						<!-- 0表示待审核；1表示通过审核。-->
+					<td nowrap="nowrap">
+						<div class="div_change">已通过</div>
+						
+					</td>
+					<td nowrap="nowrap" class="table_bold">试题年度：</td>
+					<td nowrap="nowrap"><div contenteditable="false">2013</div></td>
+					
+				</tr>
+					<td nowrap="nowrap" class="table_bold">备注：</td>
+					<td nowrap="nowrap" colspan="9"><div contenteditable="false">苏州十二中第一学期英语期中考试</div></td>
+				</tr>
+				<tr>
+					<td nowrap="nowrap" class="table_bold">知识点</td>
+					<td colspan="9"><div contenteditable="false">[MJ15-1-2]幂的乘方，[MJ15-1-3]积的乘方，[MJ15-3-1]同底数幂的除法</div></td>
+					
+				
+				</tr>
+				<tr>
+					<td nowrap="nowrap" class="table_bold">题干文字</td>
+					<td colspan="9">
+						<div contenteditable="false">
+						题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容
+						题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容
+						题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题
+						干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题
+						干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题干内容题
+						干内容题干内容题干内容题干内容 
+						</div>
+					</td>
+
+				</tr>
+				<tr>
+					<td nowrap="nowrap" class="table_bold">题干图片</td>
+					<td colspan="9" contenteditable="false"><div contenteditable="false"></div></td>
+
+				</tr>
+				<!--子题-->
+					<!--解答题类的-->		
+					<tr class="child-question">
+						<td nowrap="nowrap" class="table_bold">子题1</td>
+						<td colspan="9" >
+								<section class="child-question-container">
+									<!--解答题子题题干-->
+									<div>
+										这里是题组题中解答题或是填空题的题干部分
+									</div>
+									<!--子题的信息：知识点，正确答案，解析等信息-->
+									<table class="child_question_msg">
+										
+										<tr>
+											<td width="8%" class="table_bold">知识点</td>
+											<td width="60%" colspan="5" nowrap="nowrap" class="knowledge_point">
+												<div contenteditable="false">知识点；知识点中间以分号分隔；知识点溢出隐藏；</div>
+											</td>
+											<td width="8%" class="table_bold">困难度</td>
+											<td width="7%"><div contenteditable="false">0.6</div></td>
+											<td width="10%" class="table_bold">预计解题时间</td>
+											<td width="7%"><div contenteditable="false">120</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">正确答案</td>
+											<td colspan="9"><div contenteditable="false">我认为他的观点是错误的</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">解析</td>
+											<td colspan="9">
+												<div contenteditable="false">
+													这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析,这里是解析 这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；
+												</div>
+											</td>
+										</tr>
+									</table>
+									
+								</section>
+							</td>
+					</tr>
+				
+				<!--选择题类的子题-->
+				<tr class="child-question">
+						<td nowrap="nowrap" class="table_bold">子题2</td>
+						<td colspan="9" >
+								<section class="child-question-container">
+									<div>
+										如果是英语的完型，这个地方可以为空——一行4个选项
+									</div>
+									<!--选择题子题题干-->
+
+									<ul class="guojia_choose model-4a">
+										<li>
+											<input type="radio" name="radio1" class="child_question_select" checked="checked" disabled>A.
+											<span class="child_question_selContent" contenteditable="false">
+												same
+											</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio1" class="child_question_select" disabled>B.
+											<span class="child_question_selContent">some</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio1" class="child_question_select" disabled>C.
+											<span class="child_question_selContent">same</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio1" class="child_question_select" disabled>D.
+											<span class="child_question_selContent">same</span>
+										</li>
+									</ul>
+									<!---->
+									<table class="child_question_msg">
+										
+										<tr>
+											<td width="8%" class="table_bold">知识点</td>
+											<td width="60%" colspan="5" nowrap="nowrap" class="knowledge_point">
+												<div contenteditable="false">知识点；知识点中间以分号分隔；知识点溢出隐藏；</div>
+											</td>
+											<td width="8%" class="table_bold">困难度</td>
+											<td width="7%"><div contenteditable="false">0.6</div></td>
+											<td width="10%" class="table_bold">预计解题时间</td>
+											<td width="7%"><div contenteditable="false">120</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">正确答案</td>
+											<td colspan="9"><div contenteditable="false">A</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">解析</td>
+											<td colspan="9">
+												<div contenteditable="false">
+													这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析,这里是解析 这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；
+												</div>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</td>
+					</tr>
+					<tr class="child-question">
+						<td nowrap="nowrap" class="table_bold">子题3</td>
+						<td colspan="9" >
+								<section class="child-question-container">
+									<div>
+										如果是英语的完型，这个地方可以为空_一行2个选项
+									</div>
+									<!--选择题子题题干-->
+
+									<ul class="guojia_choose model-2a">
+										<li>
+											<input type="radio" name="radio2" class="child_question_select" checked="checked" disabled>A.
+											<span class="child_question_selContent" contenteditable="false">
+												same
+											</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio2" class="child_question_select" disabled>B.
+											<span class="child_question_selContent">some</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio2" class="child_question_select" disabled>C.
+											<span class="child_question_selContent">same</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio2" class="child_question_select" disabled>D.
+											<span class="child_question_selContent">same</span>
+										</li>
+									</ul>
+									<!---->
+									<table class="child_question_msg">
+										
+										<tr>
+											<td width="8%" class="table_bold">知识点</td>
+											<td width="60%" colspan="5" nowrap="nowrap" class="knowledge_point">
+												<div contenteditable="false">知识点；知识点中间以分号分隔；知识点溢出隐藏；</div>
+											</td>
+											<td width="8%" class="table_bold">困难度</td>
+											<td width="7%"><div contenteditable="false">0.6</div></td>
+											<td width="10%" class="table_bold">预计解题时间</td>
+											<td width="7%"><div contenteditable="false">120</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">正确答案</td>
+											<td colspan="9"><div contenteditable="false">A</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">解析</td>
+											<td colspan="9">
+												<div contenteditable="false">
+													这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析,这里是解析 这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；
+												</div>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</td>
+					</tr>
+				<tr class="child-question">
+						<td nowrap="nowrap" class="table_bold">子题4</td>
+						<td colspan="9" >
+								<section class="child-question-container">
+									<div>
+										如果是英语的阅读，这个地方可以为子题题干_一行1个选项
+									</div>
+									<!--选择题子题题干-->
+
+									<ul class="guojia_choose model-1a">
+										<li>
+											<input type="radio" name="radio3" class="child_question_select" checked="checked" disabled>A.
+											<span class="child_question_selContent" contenteditable="false">
+												same
+											</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio3" class="child_question_select" disabled>B.
+											<span class="child_question_selContent">some</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio3" class="child_question_select" disabled>C.
+											<span class="child_question_selContent">same</span>
+										</li>
+										<li>
+											<input type="radio"  name="radio3" class="child_question_select" disabled>D.
+											<span class="child_question_selContent">same</span>
+										</li>
+									</ul>
+									<!--子题的信息：知识点，正确答案，解析等信息-->
+									<table class="child_question_msg">
+										
+										<tr>
+											<td width="8%" class="table_bold">知识点</td>
+											<td width="60%" colspan="5" nowrap="nowrap" class="knowledge_point">
+												<div contenteditable="false">知识点；知识点中间以分号分隔；知识点溢出隐藏；</div>
+											</td>
+											<td width="8%" class="table_bold">困难度</td>
+											<td width="7%"><div contenteditable="false">0.6</div></td>
+											<td width="10%" class="table_bold">预计解题时间</td>
+											<td width="7%"><div contenteditable="false">120</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">正确答案</td>
+											<td colspan="9"><div contenteditable="false">我认为他的观点是错误的</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">解析</td>
+											<td colspan="9">
+												<div contenteditable="false">
+													这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析,这里是解析 这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；
+												</div>
+											</td>
+										</tr>
+									</table>
+									
+								</section>
+							</td>
+					</tr>
+				
+				
+				<tr class="child-question">
+						<td nowrap="nowrap" class="table_bold">子题5</td>
+						<td colspan="9" >
+								<section class="child-question-container">
+									<div>
+										What is the story mainly about?(多选题)
+									</div>
+									<!--选择题子题选项-->
+									<ul class="guojia_choose model-1a">
+										<li>
+											<input type="checkbox" name="check1" class="child_question_select" checked="checked" disabled>A.
+											<span class="child_question_selContent" contenteditable="false">
+												A businessman learns how to fish from a fisherman.
+											</span>
+										</li>
+										<li>
+											<input type="checkbox" name="check1" class="child_question_select" checked="checked" disabled>B.
+											<span class="child_question_selContent">A businessman learns how to fish from a fisherman.</span>
+										</li>
+										<li>
+											<input type="checkbox" name="check1" class="child_question_select" disabled>C.
+											<span class="child_question_selContent">A businessman learns how to fish from a fisherman.</span>
+										</li>
+										<li>
+											<input type="checkbox" name="check1" class="child_question_select" disabled>D.
+											<span class="child_question_selContent">A businessman learns how to fish from a fisherman.</span>
+										</li>
+									</ul>
+									<!---->
+									<table class="child_question_msg">
+										
+										<tr>
+											<td width="8%" class="table_bold">知识点</td>
+											<td width="60%" colspan="5" nowrap="nowrap" class="knowledge_point">
+												<div contenteditable="false">知识点；知识点中间以分号分隔；知识点溢出隐藏；</div>
+											</td>
+											<td width="8%" class="table_bold">困难度</td>
+											<td width="7%"><div contenteditable="false">0.6</div></td>
+											<td width="10%" class="table_bold">预计解题时间</td>
+											<td width="7%"><div contenteditable="false">120</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">正确答案</td>
+											<td colspan="9"><div contenteditable="false">AB</div></td>
+										</tr>
+										<tr>
+											<td class="table_bold">解析</td>
+											<td colspan="9">
+												<div contenteditable="false">
+													这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析,这里是解析 这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；这里是解析；
+												</div>
+											</td>
+										</tr>
+									</table>
+								</section>
+							</td>
+					</tr>
+			</table>
+		
+		
+		</div>
+	</div>
+	<div class="btn_fix">
+		<button class="btn-yellow modify_btn" style="margin-right: 15px;">放弃</button>
+		<button class="btn_green modify_btn">确定</button>
+	</div>
+	<div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> 
+</div>
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="../../common/js/jquery.ztree.core.min.js"></script>
+<script src="../../common/js/jquery.fly.min.js"></script>
+<script src="../../common/js/tree.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script src="js/selectTest.js"></script>
+<script src="js/watch_paper.js">
+</script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

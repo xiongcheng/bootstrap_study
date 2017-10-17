@@ -1,0 +1,371 @@
+/*页面右面布局的样式*/
+.nav-tabs.nav-justified>li>a{
+	border-bottom: 1px solid #ccc;
+}
+/*添加知识树部分的学段样式*/
+.knowledge_learningStages{
+	margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.knowledge_learningStages span{
+	font-weight: 600;
+}
+.knowledge_learningStages select{
+	width:70px;
+}
+/*教材目录添加检索信息*/
+.textBook_search{
+	padding-top:10px;
+	margin-top: 10px;
+    margin-left: 12px;
+    overflow: hidden;
+}
+.textBook_search ul li{
+	float: left;
+	margin-bottom: 18px;
+}
+.textBook_search ul li span{
+	display: inline-block;
+	width:42px;
+}
+.textBook_search ul li:nth-child(2n){
+	float: right;
+	margin-right: 12px;
+}
+.textBook_search ul li:nth-child(2n) select{
+	width: 69px;
+}
+.textBook_search ul li select{
+	width:66px;
+}
+/*不同学段对应年级*/
+#textBook_junior,#textBook_senior{
+	display: none;
+}
+/*知识树添加边框颜色*/
+.ztree_border{
+	min-height: 300px;
+	border:1px solid #ccc;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.left_content{
+	width: 23%;
+	float: left;
+	margin-right: 20px;
+}
+.main_content{
+	float: right;
+    padding-right: 0;
+    width: 75%;
+}
+.main_content .test-type .panel-body{
+	padding: 12px 12px 0 12px;
+}
+.test-type{
+	width: 855px;
+}
+ul.search_condition{
+	width: 92%;
+	float: left;
+	margin-bottom: 0;
+}
+
+ul.search_condition li{
+	float: left;
+	margin-right: 15px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.search_condition li select{
+	height: 24px;
+}
+
+
+.search_condition li:nth-child(3n){
+	margin-right: 0;
+}
+.search_condition li.width_22{
+	width: 22%;
+}
+.search_condition li:nth-child(1) input,.search_condition li:nth-child(7) input{
+	padding: 0;
+	width: 85%;
+	line-height: 24px;
+	border:1px solid #CCCCCC;
+}
+.search_condition li:nth-child(7) input{
+	width: 80%;
+}
+.search_condition li:nth-child(7),.search_condition li:nth-child(8),.search_condition li:nth-child(9){
+	margin-bottom: 0;
+}
+.search_condition li.width_51{
+	width: 51%;
+}
+.search_condition li .width_63{
+	width: 63%;
+}
+.search_condition li .width_73{
+	width: 73%;
+}
+.search_condition li .width_50{
+	width: 50%;
+}
+.search_condition li .width_76{
+	width: 76%;
+    margin-right: 12px;
+}
+
+.search_condition li span{
+	padding: 0;
+	margin-right: 8px;
+	
+}
+/*起始时间的样式*/
+.search_condition li span.special_span{
+	display: inline-block;
+	float: left;
+	margin-right: 8px;	
+}
+
+.search_condition li span.input-group-addon {
+	padding: 0 6px;
+	
+}
+.search_condition li span.glyphicon{
+	margin-right: 0;
+}
+.datetimeStart,.datetimeEnd{
+	width: 36.2%;
+	float: left;
+	margin-right: 8px;
+}
+.input-group .form-control {
+	border-radius: 0;
+	height: 24px;
+	padding: 0 4px;
+}
+
+
+/*题型根据学科的变化而变化*/
+#ques_type_chinese{
+	display: none;
+}
+#ques_type_myth{
+	display: inline-block;
+}
+/*查询按钮的样式*/
+.search_btn{
+	float: right;
+    padding: 18px 16px;
+    background-color: #14d0a2;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.search_btn:hover{
+	background-color: #04B88C;
+}
+/*通过与不通过导航的样式*/
+.point-nav{
+	/*padding: 10px;*/
+	margin-bottom: 10px;
+	width: 855px;
+}
+.panel-body{
+	background: none;
+	margin-bottom: 0;
+}
+.manage_knowledge_tree{
+	margin-bottom: 15px;
+}
+#nav_fixed{
+	width: 855px;
+}
+#nav_fixed label{
+	font-weight: 500;
+	margin-right: 15px;
+}
+#option1{
+	height: 25px;
+    width: 20px;
+    margin: 0;
+}
+.panel-body .row{
+	line-height: 35px;
+}
+.panel-body .row .col-md-4{
+	line-height: 25px;
+}
+.panel-body .row .col-md-4 span{
+	display: inline-block;
+	margin-right: 15px;
+	cursor: pointer;
+	line-height: 35px;
+}
+.panel-body .row .num-page span.page_btn {
+	line-height: 25px;
+    cursor: pointer;
+    color: #333;
+    margin:0 10px;
+    background-color: #f9f9f9;
+    border: solid 1px #CCC;
+    border-radius: 2px;
+    padding: 1px 6px;
+}
+.panel-body .row .num-page span.num{
+	margin-right:0;
+	
+}
+
+.panel-body .row .col-md-4 span.paper_pass{
+	color: #43B3AD;
+	font-weight: 700;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.panel-body .row .col-md-4 span.paper_delete{
+	color: #fc371e;
+	font-weight: 700;
+	cursor:pointer;
+}
+.panel-body .row .col-md-4 span.paper_nopass{
+	color: #000;
+	font-weight: 700;
+	cursor:pointer;
+}
+/*排序*/
+
+.question_sort{
+	cursor: pointer;
+	font-size: 12px;
+	color:#959595;
+}
+.sub_time{
+	margin-right: 10%;
+}
+
+.paperExam_keyword{
+	margin-left: 5%;
+	
+}
+.paperExam_keyword input{
+	height: 28px;
+    width: 50%;
+    border:1px solid #DDDDDD;
+}
+.paper_jump{
+	height:25px;
+	width:25%;
+	margin:0 5px;
+}
+.jump_to{
+	margin-left: 14%;
+}
+.jump_to_btn{
+	border:none;
+	display: inline-block;
+	padding:0 10px;
+	margin-left: 10px;
+	height: 24px;
+	line-height: 24px;
+	
+}
+
+
+.point-nav .paper-content{
+	padding: 12px 0 0 0;
+}
+.paper_box input[type=checkbox]{
+	margin-right:0.5%;
+}
+.paper_box_parent{
+	overflow: hidden;
+	background-color: #fff;
+	padding-top: 10px;
+	}
+.paper_box{
+
+	overflow: hidden;
+	padding-left:15px;
+	padding-right:15px;
+	clear: both;
+}
+.exam_box{
+	height: 20px;
+    width: 24px;
+}
+.auto_make_content{
+	width:96%;
+}
+/*试题点击链接*/
+div.paper_box a{
+	cursor: pointer;
+}
+/*试题状态信息，审核状态，编号等*/
+.content-btn{
+	padding:4px 0 0 0;
+	font-size: 12px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+}
+.paper_msg{
+	width: 100%;
+	float: left;
+	margin-bottom: 0;
+	
+}
+.paper_msg li{
+	width: 22%;
+	float: left;
+	margin-right: 1%;
+	text-align: left;
+}
+.paper_msg li:nth-child(4),.paper_msg li:nth-child(8){
+	width: 30%;
+	margin-right: 0;
+}
+.col-md-10{
+	padding-left: 0;
+}
+.paper_msg li span{
+	font-size: 12px;
+	margin-top:0;
+	color: #000000;
+}
+.paper_msg li span.exam_pass{
+	color: #43B3AD;
+}
+.paper_msg li span.exam_nopass{
+	color: red;
+}
+/*试题超多试题框的高度时点击查看详情可以看到试题的全部*/
+.lookBtn {
+    position: absolute;
+    bottom: -3px;
+    right: 20px;
+    color: #333;
+}
+/*导航吸附效果*/
+.navFix{
+	position:fixed; 
+	width: 855px;
+	background-color: #eeeeee;
+	left:428px;
+    top:0; 
+	/*border:1px solid #000000;*/
+	_position:absolute; 
+	z-index:2;	
+} 
+/*实现ie6不支持fixed方法*/
+/*添加知识点和教材目录的查询按钮*/
+.jc_btn_search{
+	margin-left: 100px;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,290 @@
+/*anlysisDetail1.html、anlysisDetail1.html公共css*/
+.paper-content{position: relative;}
+
+.singalSelect { min-height: 100px; }
+
+/*标题的更改*/
+.paper-content h5{color:#44B3AD;margin-top: -5px;margin-bottom: 10px;}
+/*-------------------*/
+
+.paper-content  .radio-inline{ margin-left:50px; padding-right:40px; }
+
+.paper-content-footer label{ font-weight: normal;margin-right: 10px;color:#FF6600; }
+
+/*星星的更改*/
+.paper-content-footer span{font-size: 24px;color:#EFAC51;vertical-align: middle;}
+/*-------------------*/
+
+.paper-content-footer span:last-child{margin-right: 10px;}
+.detailAnalysis div{width:100%; overflow: hidden;}
+.page-daan{ width:100%; }
+.page-daan dt,.page-daan dd{padding:5px 0px;}
+
+/*知识点等的颜色修改*/
+.page-daan dt{ width:70px; text-align: left; background-color: #44B3AD; color:#fff; padding-left: 4px; }
+/*---------------------*/
+
+.dl-horizontal dd{margin-left: 90px;}
+.recommend{margin-top: 20px;border-top:2px solid #ddd;padding: 10px 0px;}
+.recommend span{font-size: 24px; margin-right: 10px;vertical-align: middle;}
+.recommend a,.recommend label{margin-right: 30px;text-align: right;}
+.my-type dt{width:80px;margin-top: 10px;}
+.my-type dd{margin-left: 100px;margin-top: 10px;}
+.my-type a{white-space: nowrap;padding:0px 10px;}
+
+.my-type a.active{background:#44B3AD; color:#fff;}
+
+.my-tab{margin-bottom: 10px;}
+.my-panel{background-color: #f5f5f5;}
+
+.rec-btn{float:right;}
+
+/*anlysisDetail.html新增css*/
+.test_title a {
+	display: block;
+	width: 90px;
+	padding: 4px 2px;
+	background: #999;
+	text-align: center;
+	color: #fff;
+	margin:0 auto;
+}
+.test_img {
+	width: 400px;
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+}
+.test_img img{
+	width:310px;
+	height:auto;
+}
+.test_img_wrong{
+	border:1px solid #FF0000;
+	position:relative;
+}
+.test_img_right {
+	border:1px solid #44B3AD;
+	position:relative;
+}
+.test_img_wrong:after,.test_img_right:after{
+	position: absolute;
+	top:40%;
+	right: 10px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	font-size: 18px;
+}
+
+.color-change-green { border-radius: 2px; color: #44B3AD; border-radius:2px; padding:1px 6px; }
+.color-change-green:hover { color: #FFF; background-color:#44B3AD ; }
+
+.color-change-yellow { border-radius: 2px; color: #EFAC51; }
+.color-change-yellow:hover { color: #FFF; background-color:#EFAC51 ; }
+.radio-inline { margin-bottom: 10px; }
+
+/*.test_img_wrong:after {
+	content:"\e014";
+	color:red;
+}
+.test_img_right:after {
+	content:"\e013";
+	color:#599C41;
+}*/
+.mistake_solid {
+	float: right;
+	margin-right: 30px;
+}
+
+.mistake_anlysis {
+	text-align: center;
+	position: fixed;
+	width: 60%;
+	top:20%;
+	border: 1px solid #ccc;
+	background: #000;
+	display: none;
+	z-index:1001;
+	padding: 20px 5px;
+}
+.mistake_anlysis a {
+	display: block;
+}
+
+.page-daan dd.mistake_revise {
+	text-align: left;
+}
+
+/*.mistake_revise img {
+	width:100px;
+}*/
+.revise_edit {
+	display: none;
+}
+.revise_edit a,.revise_edit button {
+	margin-top: 10px;
+	width:80px;
+	margin-right: 40px;
+}
+
+.revise_edit a span {
+	color:#ccc;
+	font-size: 16px;
+}
+.revise_edit textarea {
+	width: 100%;
+	min-height: 150px;
+}
+
+/*历史错误*/
+.mistake_history .history_title {
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	background: #43B3AD;
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+	padding: 5px 10px;
+	margin-top:0px;
+}
+.mistake_history .history_title button {
+	width:30px;
+	height: 30px;
+	float: right;
+	background:#81CCC8;
+	border-radius:50%;
+	border: 0px;
+}
+.mistake_history .history_content {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+.mistake_history .history_detail ul{
+	margin:5px 10px;
+	padding: 5px;
+}
+.mistake_history .history_detail .mistake_order {
+	display: inline-block;
+	width: 45px;
+	height: 20px;
+	text-align: center;
+	color:#fff;
+	background: url("../img/bg_2.png") no-repeat 0px 0px;
+}
+.mistake_history .history_detail .mistake_time {
+	float: right;
+	color: #DF8D34;
+}
+.mistake_history .history_detail .test_img {
+	border: 0px;
+}
+.mistake_history .history_detail .test_img img {
+	width: 240px;
+}
+/********************************/
+
+/*anlysisDetail_singal.html新增css 历史错误*/
+.history_singal_detail ul {
+	padding: 0px;
+	margin:5px 40px;
+	border:1px solid #ccc;
+	border-bottom: 0;
+	text-align: center;
+}
+.history_singal_detail ul li {
+	height: 40px;
+	line-height: 40px;
+	border-bottom:1px solid #ccc;
+}
+.test-btn-group button,.test-btn-group button a{
+	background:none;
+	border:none;
+}
+
+/*anlysisDetail_multi2.html新增css*/
+.multiSelect .multiAnswer label {
+	width:30px;
+}
+.multiSelect .multiAnswer .yourAnswer div {
+	margin-bottom: 15px;
+}
+/*anlysisDetail1.html新增css*/
+.paper-content ul{margin-left: 50px;}
+.paper-content li{margin-right: 50px;margin-top: 5px;padding:0px 5px;height: 28px;line-height: 28px;}
+.paper-content li>span:first-child{width:20px;display: inline-block;text-align: right;}
+.paper-content label{ font-weight: normal; padding:0 5px;margin-right: 5px;}
+.lookBtn {position: absolute;bottom:5px;right: 20px;} 
+.detailAnalysis h5 {
+	margin: 8px auto;
+}
+.detailAnalysis p {
+	margin: 0;
+}
+.detailAnalysis li {
+	margin:20px auto;
+	padding:5px;
+}
+.detailAnalysis label {
+	margin-top: 4px;
+	text-align: right;
+	font-weight: normal;
+	color: #333;
+}
+
+.detailRevise .mistake_revise .revise_edit {
+	text-align: left;
+}
+.detailRevise .mistake_revise .revise_content {
+	text-align: left;
+}
+.editNav_area .from_txt {
+	margin-right: 10px;
+}
+
+/*anlysisDetail2.html新增css*/
+.wrong{border:1px solid #FF9900;}
+
+.test-btn-group {padding:4px 15px; border-top:none ;}
+
+.container .panel {margin:0;}
+.detailAnalysis dt {
+	background: url(../img/answer_bg.png) no-repeat 0px 4px;
+}
+
+/*历史错误模态框*/
+/*报错*/
+.modal .modal-header {
+    background-color: #42B3AD;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    min-height: 40px;
+}
+.modal .modal-header>button>span {
+    background-color: #80CDC7;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.modal .close {
+    opacity: 1;
+}
+#myModal1 .modal-footer {
+	text-align: center;
+}
+#myModal1 .modal-footer button {
+    border: #ccc solid 1px;
+    padding: 6px 30px;
+}
+.test-report-ok {
+    background-color: #44B3AD;
+    color: #fff;
+}

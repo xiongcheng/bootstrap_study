@@ -1,0 +1,148 @@
+/*清除父元素需要的样式*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.table-bordered{
+	border:none;
+}
+select{
+	margin-right: 30px;
+}
+
+/*本页面使用的input的样式*/
+input[type=checkbox], input[type=radio]{
+	margin: 0;
+	height: 16px;
+	width: 18px;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  *zoom: 1;
+}
+/*知识点和教材目录两个按钮切换的样式*/
+.nav_tab{
+	overflow: hidden;
+	padding-left: 0;
+	list-style: none;
+}
+.nav_tab>li{
+	float: left;
+	font-size: 16px;
+	border:1px solid #CCCCCC;
+	border-bottom: none;
+	text-align: center;
+}
+.nav_tab>li:last-child{
+	border-left: none;
+}
+.nav_tab>li>a{
+	display: block;
+	padding: 6px 50px;	
+}
+
+.active_chanel{
+	background-color: #43B3AD;
+	color: #FFFFFF;
+}
+/*页面主体部分的布局*/
+.paper_total{
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #CCCCCC;
+	margin-top: -10px;
+	padding:20px;
+}
+.learn_period{
+	float: left;
+}
+.learn_period>span{
+	font-weight: bold;
+}
+.xueduan_select,.grade_select,.term_select,.publish_select,.year_select{
+	margin-left: 10px;
+	width: 100px;
+	text-align: center;
+}
+.knowledge_top{
+	overflow: hidden;
+}
+.question_select{
+	float: right;
+}
+.question_select li{
+	float: left;
+	margin-right: 30px;
+}
+.question_select li+li
+{
+	margin-left: 20px;
+}
+.question_select label{
+	font-weight: normal;
+}
+/*知识地图右侧表格部分的布局*/
+.knowledge_content,.jiaocai_body{
+	margin-top:10px;
+}
+.konwledge_left,.jcontent_left{
+	float: left;
+	width: 20%;
+	margin-right: 2%;
+	border:1px solid red;
+	height: 200px;
+}
+.konwledge_right,.jcontent_right{
+	float: left;
+	width: 78%;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+table{
+	float: left;
+}
+.table1{
+}
+.table2{
+	background-color: rgba(220, 237, 251, 0.58);
+    border-left: none;
+}
+
+.table3{
+	background-color: rgba(232, 249, 224, 0.58);
+    border-left: none;
+}
+
+.table1 tbody tr td,.table2 tbody tr td,.table3 tbody tr td{
+	  height: 36px;
+    line-height: 36px;
+    padding: 0 5px;
+    text-align: center;
+    min-width: 70px;
+    max-width: 164px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/*table tbody tr td:hover{
+	overflow: visible;
+}*/
+table tr td.table1 table tbody tr td.first_row{
+	width: 164px;
+}
+.first_line{
+	background-color: #E0E0E0;
+	color: #43B3AD;
+	font-weight: 500;
+}
+
+.table2 table tbody tr td:nth-child(1),.table3 table tbody tr td:nth-child(1){
+	border-left:none;
+}
+
+#textBook_junior1,#textBook_senior1{
+	display: none;
+}

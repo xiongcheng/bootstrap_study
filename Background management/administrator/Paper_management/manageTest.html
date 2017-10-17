@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>共享试卷组卷</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link href="css/manageTest.css" rel="stylesheet" >
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown active">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>
+	  	
+	</nav>
+	
+<div class="container">
+	<div class="position_information">
+		<span class="home_img"></span>
+		<span class="position_content">
+			<span>您目前的位置:</span>
+			<a href="#">组卷管理</a>
+			<span>&gt;</span>
+			<a href="manageTest.html">管理组卷</a>
+		</span>
+	</div>
+</div>
+	
+<div class="container">
+		<div>
+			    <div class="panel panel-default share-nav">
+					<div class="panel-body">
+						<dl class="dl-horizontal  my-type ">
+							<dt class="">学段</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">小学</a>
+								<a href="">初中</a>
+								<a href="">高中</a>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal  my-type ">
+							<dt class="">年份</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">2016</a>
+								<a href="">2015</a>
+								<a href="">2014</a>
+								<a href="">2013</a>
+								<a href="">2012</a>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal  my-type ">
+							<dt class="">地区</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖北</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+								<a href="">湖南</a>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal my-type ">
+							<dt class="">类型</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">真题卷</a>
+								<a href="">模拟卷</a>
+								<a href="">校本精华卷</a>
+								<a href="">诊断卷</a>
+							</dd>
+						</dl>
+						<dl class="dl-horizontal my-type ">
+							<dt class="">共享</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">私有</a>
+								<a href="">校内共享</a>
+								<a href="">全网共享</a>
+							</dd>
+						</dl>
+							 <!--<dt>关键字：</dt>
+							<dd class="share-key"><div class="col-md-5 input-group">
+	  							<input type="text" class="form-control" placeholder="关键字" aria-describedby="basic-addon2">
+	  							<span class="input-group-addon" id="basic-addon2">搜索</span>
+								</div>
+							</dd>-->
+						
+					</div>
+				</div>
+
+				
+				<div class="panel panel-default share-content">
+					<div class="panel-heading">
+						<div class="col-md-7 two-btn">
+							<div class="sort-buttons btn-group" data-toggle="buttons">
+								<label class="btn active" style="border-right: 1px solid #ccc;">
+									<input type="radio" name="options" id="option1" autocomplete="off" checked>创建日期
+									<span class="glyphicon glyphicon-arrow-down"></span>
+								</label>
+								<label class="btn" style="border-right: 1px solid #ccc;">
+									<input type="radio" name="options" id="option2" autocomplete="off">浏览次数
+									<span class="glyphicon glyphicon-arrow-down"></span>
+								</label>
+						    </div>
+						</div>
+						<div class="col-md-4 input-group text-right key-words-group">
+	  						<input type="text" class="form-control key-words" placeholder="关键字" aria-describedby="basic-addon2">
+	  						<span class="input-group-addon" id="basic-addon2">搜索</span>
+						</div>
+					</div>
+				  <div class="panel-body share-content">
+				       <table class="table table-striped">
+				          <tbody>
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+								
+							<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          	
+				          	<tr>
+				          	  	<td class="time">2016-3-4</td>
+				          	  	<td class="paper-name"><a href="lookPaper.html?edit=false" target="_blank">2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a></td>
+				          	  	<td class="looknum">浏览：54次</td>
+				          	  	<td ><a href="lookPaper.html?edit=false" target="_blank" class="color-change-green">查看</a></td>
+				          	</tr>
+				          </tbody>
+						</table>
+					
+				  </div>
+				  
+				</div>
+				
+				<!--分页-->
+				<div id="page">
+					<a href="#">上一页</a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<span>...</span>
+					<a href="#">20</a>
+					<a href="#">下一页</a>
+				</div>
+        </div>
+<div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> </div>
+
+
+
+
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="js/manageTest.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

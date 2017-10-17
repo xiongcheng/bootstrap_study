@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智能组卷</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link href="css/smartTest.css" rel="stylesheet" >
+<link href="../../common/css/tree.css" rel="stylesheet" >
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown active">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>
+	  	
+	</nav>
+	
+	
+	<div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置:</span>
+				<a href="#">组卷管理</a>
+				<span>&gt;</span>
+				<a href="addPaper.html">新增组卷</a>
+				<span>&gt;</span>
+				<a href="#">智能组卷</a>
+			</span>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			<div class="left_content">
+				<div>
+					<!--位置2：树导航 添加类名nav-tree-->
+					<ul class="nav nav-tabs nav-justified my-tab nav-tree" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">教材目录</a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">知识点</a></li>
+					</ul>
+
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home">
+							<div  class="panel panel-default my-type">
+								<div class="select-group">
+									<select class="select-default">
+										<option value="">学段</option>
+										<option value="小学">小学</option>
+										<option value="初中">初中</option>
+										<option value="高中">高中</option>
+									</select>
+									<select class="select-default">
+										<option value="">年级</option>
+										<option value="一年级">一年级</option>
+										<option value="二年级">二年级</option>
+										<option value="三年级">三年级</option>
+										<option value="四年级">四年级</option>
+										<option value="五年级">五年级</option>
+										<option value="六年级">六年级</option>
+									</select>
+									<select class="select-default">
+										<option value="">学期</option>
+										<option value="一学期">一学期</option>
+										<option value="二学期">二学期</option>
+										<option value="三学期">三学期</option>
+									</select>
+									<select class="select-default">
+										<option value="">出版社</option>
+										<option value="人教版">人教版</option>
+										<option value="苏教版">苏教版</option>
+									</select>
+									<select class="select-default">
+										<option value="">年份</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+									</select>
+								</div>	
+								
+							    <div class="panel-body my-panel">
+								 	 <ul id="treeDemo" class="ztree"></ul>
+								</div>
+							</div>
+				    	</div>
+					    
+					    <div role="tabpanel" class="tab-pane" id="profile">
+					    	<div  class="panel panel-default my-type">
+						    	<div class="select-group">
+									<select class="select-default">
+										<option value="">学段</option>
+										<option value="小学">小学</option>
+										<option value="初中">初中</option>
+										<option value="高中">高中</option>
+									</select>
+								</div>
+								
+							    <div class="panel-body my-panel">
+								 	<ul id="treeDemo1" class="ztree"></ul>
+								</div> 
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>	
+				
+			<div class="main_content">
+			    
+				<div class="panel panel-default">
+				    <div class="panel-body">
+				    		
+				    		<div class="panel panel-default outline-panel">
+						    	 <div class="panel-heading"><p>教材</p></div>
+							  <div class="panel-body">
+							       <ul class="list-inline outline">
+										<li >教材的内容如果太长太长怎么办<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+										<li >教材的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+							       </ul>
+							  </div>
+							</div>
+
+							<div class="panel panel-default know-panel">
+						    	 <div class="panel-heading"><p>知识点</p></div>
+								  <div class="panel-body">
+								       <ul class="list-inline outline">
+											<li >知识点的内容如果太长太长怎么办<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+											<li >知识点的内容<a href="" class="glyphicon glyphicon-remove text-right"></a></li>
+								       </ul>
+								  </div>
+							</div>
+				    		
+				    		
+				    		<p>难度：<a href="#" class="my-star my-star-1 glyphicon glyphicon-star"></a>
+		               				<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+		               				<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+		               				<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+		               				<a href="#" class="my-star my-star-0 glyphicon glyphicon-star"></a>
+		               				<span href="#" class="no-limit" >不限</span>
+			               	</p>
+							<p class="fromWhere">来源：
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox1" value="" checked="checked"> 真题
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox2" value=""> 名校模拟
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox3" value=""> 练习题
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox4" value=""> 诊断题
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox5" value=""> 专属题
+								</label>
+							</p>
+				    	
+							<table class="table table-striped my-table">
+							     <thead>
+							     	<tr>
+							     		<td style="width: 260px;">大题名</td>
+							     		<td style="width: 260px;">题型</td>
+							     		<td>题数</td>
+							     		<td>操作</td>
+							     	</tr>
+							     </thead>
+							     <tbody>
+							     	<tr>
+							     		<td><input type="text" value="单选题"  class="form-control"></td>
+							     		<td ><div  class="form-control " >
+							     					<span class="quesName" >单选</span>
+							     					<a href="#" class="glyphicon glyphicon-triangle-bottom smart-test-typeBtn"></a>
+							     			</div>
+							     			<ul class="list-unstyled text-left smart-test-type">
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" checked="checked"> 单选
+												</label>
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 多选
+												</label>											
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 填空
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 判断
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 解答
+												</label>
+							     			</ul>
+							     		</td>
+							     		<td><input type="number" value="" min="0" class="st-num form-control" placeholder="共132题符合" ></td>
+							     		<td style="width:80px;"><a  href="" class="glyphicon glyphicon-trash"></a></td>
+							     	</tr>
+							     	<tr>
+							     		<td><input type="text" value="多选题"  class="form-control"></td>
+							     		<td ><div  class="form-control " >
+							     					<span class="quesName" >多选</span>
+							     					<a href="#" class="glyphicon glyphicon-triangle-bottom smart-test-typeBtn"></a>
+							     			</div>
+							     			<ul class="list-unstyled text-left smart-test-type">
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 单选
+												</label>
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" checked="checked"> 多选
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 填空
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 判断
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 解答
+												</label>
+							     			</ul>
+							     		</td>
+							     		<td><input type="number" value="" min="0" class="st-num form-control" placeholder="共132题符合" ></td>
+							     		<td style="width:80px;"><a  href="" class="glyphicon glyphicon-trash"></a></td>
+							     	</tr>
+							     	<tr>
+							     		<td><input type="text" value="填空题"  class="form-control"></td>
+							     		<td ><div  class="form-control " >
+							     					<span class="quesName" >填空</span>
+							     					<a href="#" class="glyphicon glyphicon-triangle-bottom smart-test-typeBtn"></a>
+							     			</div>
+							     			<ul class="list-unstyled text-left smart-test-type">
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 单选
+												</label>
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 多选
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" checked="checked"> 填空
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 判断
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 解答
+												</label>
+							     			</ul>
+							     		</td>
+							     		<td><input type="number" value="" min="0" class="st-num form-control" placeholder="共132题符合" ></td>
+							     		<td style="width:80px;"><a  href="" class="glyphicon glyphicon-trash"></a></td>
+							     	</tr>
+							     	<tr>
+							     		<td><input type="text" value="判断题"  class="form-control"></td>
+							     		<td ><div  class="form-control " >
+							     					<span class="quesName" >判断</span>
+							     					<a href="#" class="glyphicon glyphicon-triangle-bottom smart-test-typeBtn"></a>
+							     			</div>
+							     			<ul class="list-unstyled text-left smart-test-type">
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 单选
+												</label>
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 多选
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 填空
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" checked="checked"> 判断
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 解答
+												</label>
+							     			</ul>
+							     		</td>
+							     		<td><input type="number" value="" min="0" class="st-num form-control" placeholder="共132题符合" ></td>
+							     		<td style="width:80px;"><a  href="" class="glyphicon glyphicon-trash"></a></td>
+							     	</tr>
+							     	<tr>
+							     		<td><input type="text" value="解答题"  class="form-control"></td>
+							     		<td ><div  class="form-control " >
+							     					<span class="quesName" >解答</span>
+							     					<a href="#" class="glyphicon glyphicon-triangle-bottom smart-test-typeBtn"></a>
+							     			</div>
+							     			<ul class="list-unstyled text-left smart-test-type">
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 单选
+												</label>
+							     				<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 多选
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 填空
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" > 判断
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" class="inlineCheckbox-quesType" value="" checked="checked"> 解答
+												</label>
+							     			</ul>
+							     		</td>
+							     		<td><input type="number" value="" min="0" class="st-num form-control" placeholder="共132题符合" ></td>
+							     		<td style="width:80px;"><a  href="" class="glyphicon glyphicon-trash"></a></td>
+							     	</tr>
+							     </tbody>
+							     <tfoot>
+							     	<tr>
+							     		<td colspan="2" class="add-btn"><button class="btn btn-success glyphicon">添加大题</button></td>
+							     		<td colspan="2"><span class="text-view">试卷总览：共<strong class="title-num">3</strong>大题</span></td>
+							     	</tr>
+							     </tfoot>
+			               </table>
+			               
+							<p class="text-center footer-btn"> <a href="lookPaper.html?edit=true"><button class="btn btn-success">确认</button></a>  <button class="btn btn-warning">重置</button></p>
+					</div>
+				</div>
+        	</div>
+		</div>
+	<div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> 
+</div>
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="../../common/js/jquery.ztree.core.min.js"></script>
+ <script src="js/smartTest.js"></script>
+ <script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

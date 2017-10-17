@@ -1,0 +1,71 @@
+/*导航吸附效果*/
+
+.fwrong_navFix{
+	position:fixed; 
+	width: 1140px;
+	top:0; 
+	border:1px solid #000000;
+	_position:absolute; 
+	z-index:2;	
+} 
+.point-nav1{
+	margin-bottom: 10px;
+}
+#wrong_paperNav_fixed{
+	width: 1140px;
+	padding:5px;
+	background-color: #EFEEEE;
+}
+.main_content{
+	padding: 0;
+}
+.paper_W_search{
+	    padding: 10px 10px 3px;
+}
+/*//实现ie6不支持fixed方法*/
+.fWrong_times{
+	float: left;
+    width: 15%;
+    cursor: pointer;
+    padding: 0 26px;
+    margin-right: 50%;
+}
+.num-page{
+	float: left;
+	width: 15%;
+}
+.jump_to{
+	float: left;
+	width: 18%;
+	margin-left: 0;
+}
+.search_btn1{
+	float: right;
+    padding: 5px 16px;
+    background-color: #14d0a2;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.main_content{
+	width: 1140px;
+}
+/*样式变动——与试题审核页面不同*/
+.paper_msg li {
+    width: 16%;
+    float: left;
+    margin-right: 1%;
+    text-align: left;
+   }
+.paper_msg li:nth-child(8){
+	 width: 16%;
+    margin-right: 1%;
+}
+.paper_msg li:nth-child(4), .paper_msg li:nth-child(9) {
+    width: 25%;
+    margin-right: 1%;
+}
+.paper_msg li:nth-child(5), .paper_msg li:nth-child(10) {
+    width: 16%;
+    margin-right: 1%;
+}

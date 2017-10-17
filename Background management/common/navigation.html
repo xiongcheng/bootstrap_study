@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>后台管理员导航</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../common/css/bootstrap.min.css" rel="stylesheet">
+<link href="../common/css/bootstrap-theme.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="../common/css/navigation.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../common/img/admin_logo.png"/>
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      		<ul class="nav navbar-nav list-inline navbar-right">
+	        		<li>
+	        			<a href="teacherPersonalInformation.html">
+	        				<img src="../common/img/person.jpg" alt="头像" class="person">
+	        				<span>后台管理员</span>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="../login/login.html">
+	        				<span class="glyphicon glyphicon-off login-out"></span> 退出
+	        			</a>
+	        		</li>
+	     		</ul>
+	      		<form class="navbar-form navbar-right nav-form" role="search">
+<!--	        		<select class="form-control">
+					  <option>小学</option>
+					  <option>初中</option>
+					  <option>高中</option>
+					</select>-->
+	       		    <select class="form-control">
+					  <option>语文</option>
+					  <option>数学</option>
+					  <option>物理</option>
+					  <option>地理</option>
+					  <option>政治</option>
+					  <option>历史</option>
+					</select>
+	      		</form>
+	    	</div>
+	   	 	</div>
+	  	</div>
+	</nav>
+
+<!--导航按钮栏-->
+	<div class="container navbar-btn">
+		<ul class="nav nav-pills">
+			<li role="presentation" class="dropdown active">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+			    	试题管理 <span class="caret"></span>
+			    </a>
+			    <ul class="dropdown-menu">
+			    	<li role="presentation"><a href="#">新增试题</a></li>
+					<li role="presentation"><a href="#">试题审核</a></li>
+					<li role="presentation"><a href="#">试题统计</a></li>	
+			    </ul>
+			</li>
+			<li role="presentation" class="dropdown">
+			    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+			    	组卷管理 <span class="caret"></span>
+			    </a>
+			    <ul class="dropdown-menu">
+			    	<li role="presentation"><a href="#">新增组卷</a></li>
+					<li role="presentation"><a href="#">管理组卷</a></li>
+			    </ul>
+			</li>
+			<li role="presentation"><a href="#">教材目录管理</a></li>
+			<li role="presentation"><a href="#">知识地图管理</a></li>
+			<li role="presentation"><a href="#">挑错管理</a></li>
+		</ul>
+	</div>
+<script src="../common/js/jquery-1.11.2.min.js"></script>
+<script src="../common/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../common/js/navigation.js"></script>
+</body>
+</html>

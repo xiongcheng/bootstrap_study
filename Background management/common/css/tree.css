@@ -1,0 +1,84 @@
+
+.nav-tree li a { border-radius:0 ; }
+
+.left_content .my-tab { font-size: 15px; font-weight: bold;  height: 32px; }
+.nav-tree {
+	margin:0;
+}
+.nav-tabs.nav-justified>li>a {
+	font-weight: bold;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 0;
+	padding:5px 15px;
+	border-radius: 0;
+}
+.nav-tabs.nav-justified>li>a:hover{
+	color:#44B3AD;
+	background-color: #EEE;
+}
+
+.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {
+	background: #44B3AD;
+	color: #fff;
+	border-top: 1px solid #44B3AD;
+	border-left: 1px solid #44B3AD;
+	border-right: 1px solid #44B3AD;
+	border-bottom: 1px solid #44B3AD;	
+}
+
+.left_content {padding-left: 0;}
+.my-type { background: #F4F4F4; }  
+.select-group { padding:0 8px; }
+.select-default { width:100px; margin: 8px 12px; }
+
+
+/*.nav-tree li.active>a{
+	background: #44B3AD;
+	color: #fff;
+	border: 1px solid #44B3AD;
+}
+
+.nav-tree li.active a:hover{
+	background: #44B3AD;
+	color: #fff;
+	border: 1px solid #44B3AD;
+}
+
+.nav-tree li.active a:focus {
+	background: #44B3AD;
+	color: #fff;
+	border: 1px solid #44B3AD;
+}*/
+
+.first-nav {
+	border-top: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.sort-buttons label {
+	background:none;
+}
+.sort-buttons label.active {
+	background: #fff;
+	color:#EFAC51;
+}
+
+.tab-list-style li { position: relative; text-align: center; margin: 4px 10px; }
+.tab-list-style li a { width:80px; display:inline-block; }
+.tab-list-style li a:hover { color:#44B3AD;  }
+.tab-list-style li.active a { background-color:#44B3AD; color:#FFF;  }
+.more { margin-left: 15px; width:80px; display:inline-block; text-align: center; }
+.more:hover { color:#44B3AD; }
+.more:focus { color:#44B3AD; }
+
+/*新增修改 树导航修改*/
+.my-panel{ background-color: #f5f5f5; padding: 5px 15px; }
+.my-panel ul {margin:0px;}
+.ztree li { margin-top: 4px; margin-bottom: 4px; }
+.ztree li a.curSelectedNode{ background-color: #44B3AD; border:none; color:#fff; height: 18px;line-height: 18px; opacity: 1; }
+.ztree * {font-size: 14px;}
+.ztree li a:hover{ text-decoration: none; background-color: #44B3AD; color: #fff; opacity: 0.8; }
+.ztree li a {height: 18px;line-height: 18px;padding:0 10px;  }

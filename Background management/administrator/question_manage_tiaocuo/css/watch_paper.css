@@ -1,0 +1,288 @@
+/*********************************这部分是查看试卷页面的样式****************************************************/
+.paper_detail,.fWrong_lici{
+	width: 1140px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:15px;
+	border:1px solid #CCCCCC;
+	word-wrap: break-word; word-break: normal;
+}
+.detail-container {
+	width: 100%;
+	margin: 20px auto 50px;
+}
+.detail-container table{
+	width: 100%;
+	table-layout: fixed;
+}
+.detail-container table tr td{
+	word-break: break-word;
+	color: #000;
+}
+.detail-container table tr td.table_bold{
+	color: #8f8f8f;
+}
+tr.question_msg td{
+	text-align: left;
+}
+.table-bordered>tbody>tr>td.table_bold{
+	text-align: center;
+	border-right: none;
+}
+.table-bordered>tbody>tr>td{
+	border-left: none;
+}
+.child-question-container p{
+	word-break:break-word;
+}
+/*题组题子题信息*/
+table.child_question_msg{
+	width: 988px;
+	border-top: 1px solid #CCCCCC;
+}
+table.child_question_msg tbody tr td{
+	text-align: left;
+	padding: 7px;
+	
+}
+.knowledge_point{
+	overflow: hidden;
+}
+tr td select{
+	width:100%;
+	border:none;
+}
+/*题组题里面的选择题*/
+.child-question-container span{
+	display: inline-block;
+	line-height: 30px;
+	
+}
+.child_question_select{
+	height: 20px;
+	width: 20px;
+
+	text-align: center;
+	cursor: pointer;
+}
+input{
+	margin:0;
+}
+.child_question_correct{
+	background-color: #43B3AD;
+	color: #ffffff;
+}
+.child-question-container p span div{
+	display: inline-block;
+}
+tr.child-question:nth-child(even){
+	background-color: #f5f5f5;
+}
+/*页面最上面——试题详情一行内容*/
+.paper_header{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	position: relative;
+}
+.paper_header a{
+	cursor: pointer;
+	border-radius: 3px;
+}
+.paper_header h1{
+	font-size: 20px;
+	font-weight: 600;
+	float: left;
+}
+.question_operate{
+	float: right;
+	width: 380px;
+}
+.question_operate_modify{
+	width:100px;
+}
+.question_operate a{
+	font-size: 14px;
+	cursor: pointer;
+}
+.question_pass{
+	color: #14d0a2;
+	margin-right: 10%;
+}
+.question_nopass{
+	color: #ea4552;
+	margin-right: 10%;
+}
+.question_nopass:hover{
+	color: #AB0B17;
+}
+.question_modify,.question_resubmit{
+	color: #666666;
+}
+.question_modify:hover,.question_resubmit:hover{
+	color: #373636;
+}
+.question_modify+.question_resubmit{
+	margin-left: 10%;
+}
+.download_paper{
+    margin-left: 35%;
+   /*text-align: center;*/
+	color: #1067f7;
+	text-decoration: underline;
+}
+.download_paper:hover{
+	color: #0347b8;
+	text-decoration: underline;
+}
+/*点击修改之后确定按钮和放弃按钮的样式*/
+.btn_fix{
+	display: none;
+	float: right;
+	margin-top:12px;
+}
+.btn_fixed{
+	display: none;
+	float: right;
+	margin-top:12px;
+	background-color: #f3f3f3;
+    padding: 12px 10px;
+    position: fixed;
+    bottom: 0;
+    border: 1px solid #959595;
+    border-radius: 5px 5px 0 0;
+}
+.modify_btn{
+	border: none;
+	float: float;
+	padding:4px 30px;
+	color: #FFFfff;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/*********************************这部分是试题挑错页面的样式****************************************************/
+/*报错详情一行的样式*/
+.find_wrong_header{
+	width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+	
+h1{
+	font-size: 20px;
+	font-weight: 600;
+	float: left;
+	margin-right: 18%;
+}
+.num-page{
+	float: left;
+	width: 10%;
+}
+.jump_to{
+	float: left;
+	width: 25%;
+	margin-left: 0;
+	margin-top: -4px;
+}
+.paper_jump {
+    height: 24px;
+    width: 25%;
+    margin: 0 5px;
+}
+.jump_to_btn {
+    border: none;
+    display: inline-block;
+    padding: 0 16px;
+    margin-left: 10px;
+    height: 24px;
+    line-height: 24px;
+}
+.question_wrong_msg{
+	width:24%;
+	float: left;
+}
+.question_wrong_deal{
+	float: left;
+	margin-right: 5%;
+	margin-top:-4px;
+}
+.question_wrong_msg>span{
+	display: inline-block;
+	margin-right: 6%;
+}
+.question_wrong_num{
+	color: #0000FF;
+}
+.question_wrong_zt{
+	color: red;
+}
+/*挑错内容*/
+.wrong_detail{
+	padding:8px;
+	width: 100%;
+	overflow: hidden;
+}
+.wrong_detail:nth-child(odd){
+	background-color: #f5f5f5;
+}
+.wrong_detail span{
+	display: inline-block;
+	float: left;
+}
+.find_wrong_text{
+	width: 80%;
+}
+.find_wrong_people{
+	text-align: center;
+	width: 10%;
+	color: #A0A0A0;
+}
+.find_wrong_date{
+	text-align: center;
+	width: 10%;
+	color: #A0A0A0;
+}
+/*展开错误信息和关闭错误信息的按钮*/
+.hide_show_btn{
+	border:1px solid #ccc;
+	margin-bottom: 15px;
+	width: 1140px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #F5F5F5;
+	border-top: none;
+	height: 30px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	
+}
+.hide_show_btn:hover{
+	background-color: #B0E0E6;
+}
+.question_operate_wrong{
+	float: right;
+	width: 180px;
+}
+/*修改试题时 切换下拉菜单*/
+.div_change{
+	display: block;
+}
+.select_change{
+	display: none;
+}
+/*操作试题按钮吸附*/
+.question_operate_fixed{
+	background-color: #f3f3f3;
+    padding: 12px 10px;
+    position: fixed;
+    border: 1px solid #959595;
+    border-radius: 0 0 5px 5px;
+    top: 0;
+    _position: absolute;
+    z-index: 2;
+}

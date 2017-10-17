@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>试卷管理</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-datetimepicker.min.css" type="text/css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="css/paper_manage.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+			       		    <select class="form-control">
+							  <option>语文</option>
+							  <option>数学</option>
+							  <option>物理</option>
+							  <option>地理</option>
+							  <option>政治</option>
+							  <option>历史</option>
+							</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">
+					    	知识方法能力管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">知识</a></li>
+							<li role="presentation"><a href="javascript();">方法</a></li>
+							<li role="presentation"><a href="javascript();">能力</a></li>
+							<li role="presentation"><a href="javascript();">描述</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation">
+					    <a href="#">
+					    	图谱管理 
+					    	
+					    </a>
+					    
+					</li>
+					<li role="presentation" class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">试题管理
+							<span class="caret"></span>
+						</a>
+						 <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">试题上传</a></li>
+							<li role="presentation"><a href="javascript();">试题审核</a></li>
+							
+					    </ul>
+					</li>
+					<li role="presentation"  class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="javascript();" role="button" aria-haspopup="true" aria-expanded="false">组卷管理
+							<span class="caret"></span>
+						</a>
+						 <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="javascript();">试卷上传</a></li>
+							<li role="presentation"><a href="#">试卷管理</a></li>
+							
+					    </ul>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="position_information">
+			<span class="home_img"></span>
+			<span class="position_content">
+				<span>您目前的位置:</span>
+				<a href="#">组卷管理</a>
+			</span>
+		</div>
+	</div>
+	
+	<!-- 筛选条件 begin -->
+	<div class="container">
+		<div class="search_classify">
+			<div class="classify_name">
+				<span class="search_name">学段</span>
+				<ul>
+					<li>全部</li>
+					<li>小学</li>
+					<li>初中</li>
+					<li>高中</li>
+				</ul>
+			</div>
+			<div class="classify_name">
+				<span class="search_name">教材</span>
+				<ul>
+					<li>全部</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+					<li>一年级上</li>
+				</ul>
+			</div>
+			<div class="classify_name">
+				<span class="search_name">关键字</span>
+				<div class="search_box">
+					<form action="" method="" id="">
+						<input type="text" name="search_query" class="search_input" placeholder="请输入关键字">
+						<button>搜索</button>
+					</form>
+				</div>
+				<button class="submit_time">上传日期 <span class="glyphicon glyphicon-arrow-down"></span></button>
+			</div>
+		</div>
+		<!-- 试卷列表 -->
+		<div class="panel-body search_result">
+	    	<ul class="list-unstyled con_box">
+	    		
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox">
+	    				<input type="checkbox" name="subBox"/>
+	    			</span>
+	    			<span class="con_time">
+	    				2016-03-31
+	    			</span>
+	    			<span class="con_a">
+	    				<a href="lookPaper.html?edit=false" target="_blank" class="u_show" >2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a>
+	    			</span>
+	    			<span class="con_btn">
+	    				<a href="#" class="btn-share-test color-change-green">查看</a>
+	    				<a href="#" class="btn-del-test color-change-yellow" style="display:none" >删除</a>
+	    			</span>
+	    		</li>
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox">
+	    				<input type="checkbox" name="subBox"/>
+	    			</span>
+	    			<span class="con_time">
+	    				2016-03-31
+	    			</span>
+	    			<span class="con_a">
+	    				<a href="lookPaper.html?edit=false" target="_blank" class="u_show" >2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a>
+	    			</span>
+	    			<span class="con_btn">
+	    				<a href="#" class="btn-share-test color-change-green">查看</a>
+	    				<a href="#" class="btn-del-test color-change-yellow" style="display:none" >删除</a>
+	    			</span>
+	    		</li>
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox">
+	    				<input type="checkbox" name="subBox"/>
+	    			</span>
+	    			<span class="con_time">
+	    				2016-03-31
+	    			</span>
+	    			<span class="con_a">
+	    				<a href="lookPaper.html?edit=false" target="_blank" class="u_show" >2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a>
+	    			</span>
+	    			<span class="con_btn">
+	    				<a href="#" class="btn-share-test color-change-green">查看</a>
+	    				<a href="#" class="btn-del-test color-change-yellow" style="display:none" >删除</a>
+	    			</span>
+	    		</li>
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox">
+	    				<input type="checkbox" name="subBox"/>
+	    			</span>
+	    			<span class="con_time">
+	    				2016-03-31
+	    			</span>
+	    			<span class="con_a">
+	    				<a href="lookPaper.html?edit=false" target="_blank" class="u_show" >2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a>
+	    			</span>
+	    			<span class="con_btn">
+	    				<a href="#" class="btn-share-test color-change-green">查看</a>
+	    				<a href="#" class="btn-del-test color-change-yellow" style="display:none" >删除</a>
+	    			</span>
+	    		</li>
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox">
+	    				<input type="checkbox" name="subBox"/>
+	    			</span>
+	    			<span class="con_time">
+	    				2016-03-31
+	    			</span>
+	    			<span class="con_a">
+	    				<a href="lookPaper.html?edit=false" target="_blank" class="u_show" >2016临沂商城实验学校高三一轮复习数学模拟试题五（理）</a>
+	    			</span>
+	    			<span class="con_btn">
+	    				<a href="#" class="btn-share-test color-change-green">查看</a>
+	    				<a href="#" class="btn-del-test color-change-yellow" style="display:none" >删除</a>
+	    			</span>
+	    		</li>
+	    		<li class="con_li clearfix" name="">
+	    			<span class="con_checkbox" id="checkAll2">
+	    				<input type="checkbox" id="checkAll" /> 
+	    			</span>  
+	    			 <span class="con_time all_txt" >
+	    				全选本页
+	    			</span> 
+	    			<span class="con_btn del_btn" >
+	    				<a class="color-change-yellow"" href="#">删除</a>
+					</span>
+	    		</li>
+	    	</ul>
+		</div>	
+	</div>
+<!-- 模态框 -->
+<!-- 模态框（Modal1） 全选删除-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body modal-body-content">
+            	是否删除所有选中的试卷 ?
+         </div>
+         <div class="modal-footer modal_fot">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              	确定
+            </button>
+            <button type="button" class="btn btn-default modal_fot_btn"
+               data-dismiss="modal">
+               	取消
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 模态框（Modal1） 全选删除-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body modal-body-content">
+            	是否删除所有选中的试卷 ?
+         </div>
+         <div class="modal-footer modal_fot">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              	确定
+            </button>
+            <button type="button" class="btn btn-default modal_fot_btn"
+               data-dismiss="modal">
+               	取消
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 模态框（Modal2） 无选中删-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body modal-body-content">
+            	错误: 无选中试卷 
+         </div>
+         <div class="modal-footer  modal_fot">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              	 确定
+            </button>
+            <button type="button" class="btn btn-default"
+               data-dismiss="modal">
+               	取消
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 模态框（Modal3） 有选择删-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body modal-body-content">
+            	是否删除选中的试卷 ?
+         </div>
+         <div class="modal-footer  modal_fot">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              	 确定
+            </button>
+            <button type="button" class="btn btn-default"
+               data-dismiss="modal">
+               	取消
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 模态框（Modal4） 删除单个-->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-body modal-body-content">
+            	是否删除<span class="paper-title-library"></span> ?
+         </div>
+         <div class="modal-footer  modal_fot">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              	 确定
+            </button>
+            <button type="button" class="btn btn-default"
+               data-dismiss="modal">
+               	取消
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--导航按钮栏-->
+
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js"></script>
+<script src="../../common/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script src="js/paper_manage.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

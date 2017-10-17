@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>试题解析</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link rel="stylesheet" href="../../common/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="../../common/kindeditor/plugins/code/prettify.css" />
+<script charset="utf-8" src="../../common/kindeditor/kindeditor-all.js"></script>
+<script charset="utf-8" src="../../common/kindeditor/lang/zh-CN.js"></script>
+<link href="css/analysis.css" rel="stylesheet" >
+<link href="css/titleAnswer.css" rel="stylesheet" >
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+</head>
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown active">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+<!--导航按钮栏-->
+
+<div class="container">
+	<div class="position_information">
+		<span class="home_img"></span>
+		<span class="position_content">
+			<span>您目前的位置:</span>
+			<a href="#">组卷管理</a>
+			<span>&gt;</span>
+			<a href="addPaper.html">新增组卷</a>
+		</span>
+	</div>
+</div>
+	
+<div class="container">
+		<!--题目内容-->
+		<div class="panel panel-default">
+		  <div class="panel-body paper-content singalSelect">
+		        <h5>试题来源：2008重庆中考数学考试题</h5>
+		        <p>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是（   ）。</p>
+				<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked" disabled> A. M、N、P
+				</label>
+				<label class="radio-inline answer_wrong1">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> B .M、P、Q
+				</label>
+				<label class="radio-inline answer_correct1">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> C .N、P、Q
+				</label>
+				<label class="radio-inline">
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled> D .M、N、Q
+				</label>
+		  </div>
+
+		  <div class="panel-footer test-btn-group">
+		  		<button type="button" class="text-left color-change-green collectionTest">收藏试题</button>
+<!--		  		<button type="button" class="history_btn color-change-green">历史错误</button>-->
+		  		<button type="button" class="dy-btn color-change-green dynasmic">动态解析</button>
+<!--		  		<button type="button" class="mistake_solid color-change-green rec-btn">错题巩固</button>-->
+		  </div>
+
+		<!--答案解析-->
+		<div class="detailAnalysis singalSelect">
+			<div>
+			<dl class="dl-horizontal page-daan pull-left">
+			  	<dt>知识点</dt>
+				  <dd>知识点的具体内容,知识点的具体内容</dd>
+				 <dt>正确答案</dt>
+				  <dd>C</dd>
+<!--				 <dt>类型</dt>
+				  <dd>高考题</dd>-->
+				 <dt>解析</dt>
+				  <dd>解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容解析的具体内容</dd>
+				  </dd>
+<!--				 <dt>订正</dt>
+				  <dd class="mistake_revise">
+					    <div class="revise_content">
+						  	<p>我的订正内容……</p>
+						  	<a href="#">
+						  		<img src="img/answer.png" alt="">
+						  		<img src="img/answer.png" alt="">
+						  	</a>
+					  	</div>
+					  	<div class="revise_edit">
+					  			<textarea id="editor_id1" name="content" style="width:100%;height:100px;">
+									备注详情信息…
+								</textarea>
+								<button class="pull-right btn-grey">取消</button>
+								<button class="pull-right btn-green">确定</button>
+
+					  	</div>
+				  </dd>-->
+		    </dl>
+			</div>
+		</div>
+		
+	</div>
+		<!--类似题推荐-->
+		<!--<div class="row recommend">
+			<div class="col-md-9"> <span class="glyphicon glyphicon-thumbs-up"></span>类似题推荐</div>
+			<div class="col-md-3"><label>1/5</label><a href="">上一题</a><a href="">下一题</a></div>
+		</div>
+		
+		<div class="panel panel-default">
+		  <div class="panel-body paper-content">
+		        <h5>试题来源：2008重庆中考数学考试题</h5>
+		        <p>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是（   ）。</p>
+		  </div>
+		  
+		  <div class="panel-footer paper-content-footer">
+			   <div class="row">
+				   	<div class="col-md-9 test-btn-group">
+				  		<button type="button" class="btn btn-default">查看详情</button>
+				  	</div>
+				  	<div class="col-md-3">
+								难度：
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+					</div>
+			   </div>	
+		  </div>
+		</div>-->
+		
+		</div>
+</div>
+<div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> 
+
+<!--动态解析-->
+<div class="modal fade" id="myModal-vieo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      	   <video src="movie.ogg" poster="../../common/img/1.png" controls="controls" width="100%" >
+					您的浏览器不支持 video 标签。
+					 <source src="movie.ogg" type="video/ogg">
+  					 <source src="movie.mp4" type="video/mp4">
+				</video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--历史错误-->
+<div class="modal fade" id="myModal-h-error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      	        <div class="mistake_history mistake_show">
+				<div class="history_title">
+					<span>历史错误</span>
+					<button data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="history_content">
+				<div class="history_singal_detail">
+					<ul>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					    <li>选项：A&nbsp;错误时间：2015-11-5</li>
+					</ul>
+				</div>
+				</div>
+			</div>  
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="js/analysis.js" type="text/javascript" charset="utf-8"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

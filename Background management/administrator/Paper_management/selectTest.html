@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>选题组卷</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="../../common/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../common/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../../common/css/zTreeStyle.css">
+<link rel="stylesheet" href="../../common/css/reset.css">
+<link rel="stylesheet" href="../../common/css/common.css">
+<link href="css/selectTest.css" rel="stylesheet" >
+<link href="css/titleAnswer.css" rel="stylesheet" >
+<link href="../../common/css/tree.css" rel="stylesheet" >
+<link rel="stylesheet" href="../navigation/css/navigation.css" type="text/css">
+<body>
+	<nav class="navbar my-nav my-navbar">
+	    <div class="header">
+			<div class="container headerCon">
+		      	<div class="pull-left headerLeft">
+					<ul class="list-unstyled list-inline">
+						<li class="pull-left">
+							<img src="../navigation/img/admin_logo.png" />
+						</li>
+<!--						<li class="pull-right">
+							<span class="text-center text-cha">后台管理员</span>
+							<span class="text-left text-eng">LEARING ANAILSIS SYSTEM</span>
+						</li>-->
+					</ul>
+				</div>
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav list-inline navbar-right">
+		        		<li>
+		        			<a href="">
+		        				<img src="../navigation/img/person.jpg" alt="头像" class="person">
+		        				<span>后台管理员</span>
+		        			</a>
+		        		</li>
+		        		<li>
+		        			<a href="../login/login.html">
+		        				<!--<span class="glyphicon glyphicon-off login-out"></span> -->退出
+		        			</a>
+		        		</li>
+		     		</ul>
+		      		<form class="navbar-form navbar-right nav-form" role="search">
+	<!--	        		<select class="form-control">
+						  <option>小学</option>
+						  <option>初中</option>
+						  <option>高中</option>
+						</select>-->
+		       		    <select class="form-control">
+						  <option>语文</option>
+						  <option>数学</option>
+						  <option>物理</option>
+						  <option>地理</option>
+						  <option>政治</option>
+						  <option>历史</option>
+						</select>
+		      		</form>
+		    	</div>
+	   	 	</div>
+	  	</div>
+	  	<div class="head-nav">
+			<div class="container">
+				<ul class="nav nav-pills">
+					<li role="presentation" class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	试题管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../question_manage_tiaocuo/add_question.html">新增试题</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_exam.html">试题审核</a></li>
+							<li role="presentation"><a href="../question_manage_tiaocuo/paper_total.html">试题统计</a></li>	
+					    </ul>
+					</li>
+					<li role="presentation" class="dropdown active">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+					    	组卷管理 <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu nav-style">
+					    	<li role="presentation"><a href="../Paper_management/addPaper.html">新增组卷</a></li>
+							<li role="presentation"><a href="../Paper_management/manageTest.html">管理组卷</a></li>
+					    </ul>
+					</li>
+					<li role="presentation"><a href="../teach-knowledge/teach-management.html">教材目录管理</a></li>
+					<li role="presentation"><a href="../teach-knowledge/knowledge-management.html">知识地图管理</a></li>
+					<li role="presentation"><a href="../question_manage_tiaocuo/paper_fwrong.html">挑错管理</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+	
+<div class="container">
+	<div class="position_information">
+		<span class="home_img"></span>
+		<span class="position_content">
+			<span>您目前的位置:</span>
+			<a href="#">组卷管理</a>
+			<span>&gt;</span>
+			<a href="addPaper.html">新增组卷</a>
+			<span>&gt;</span>
+			<a href="#">选题组卷</a>
+		</span>
+	</div>
+</div>
+
+<!--<div class="container mistake_detail">
+	<span class="mistake_num">
+		<span>您有需要复习的自动生成错题2道，</span>
+		<a href="studentDoTest.html">点击进入查看</a>
+	</span>
+</div>-->
+	<div class="container">
+		<div class="row">
+			<div class="left_content">
+				<div>
+					<!--位置2：树导航 添加类名nav-tree-->
+					<ul class="nav nav-tabs nav-justified my-tab nav-tree" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">教材目录</a></li>
+					    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">知识点</a></li>
+					</ul>
+
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane active" id="home">
+							<div  class="panel panel-default my-type">
+								<div class="select-group">
+									<select class="select-default">
+										<option value="">学段</option>
+										<option value="小学">小学</option>
+										<option value="初中">初中</option>
+										<option value="高中">高中</option>
+									</select>
+									<select class="select-default">
+										<option value="">年级</option>
+										<option value="一年级">一年级</option>
+										<option value="二年级">二年级</option>
+										<option value="三年级">三年级</option>
+										<option value="四年级">四年级</option>
+										<option value="五年级">五年级</option>
+										<option value="六年级">六年级</option>
+									</select>
+									<select class="select-default">
+										<option value="">学期</option>
+										<option value="一学期">一学期</option>
+										<option value="二学期">二学期</option>
+										<option value="三学期">三学期</option>
+									</select>
+									<select class="select-default">
+										<option value="">出版社</option>
+										<option value="人教版">人教版</option>
+										<option value="苏教版">苏教版</option>
+									</select>
+									<select class="select-default">
+										<option value="">年份</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+									</select>
+								</div>	
+								
+							    <div class="panel-body my-panel">
+								 	 <ul id="treeDemo" class="ztree"></ul>
+								</div>
+							</div>
+				    	</div>
+					    
+					    <div role="tabpanel" class="tab-pane" id="profile">
+					    	<div  class="panel panel-default my-type">
+						    	<div class="select-group">
+									<select class="select-default">
+										<option value="">学段</option>
+										<option value="小学">小学</option>
+										<option value="初中">初中</option>
+										<option value="高中">高中</option>
+									</select>
+								</div>
+								
+							    <div class="panel-body my-panel">
+								 	<ul id="treeDemo1" class="ztree"></ul>
+								</div> 
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>	
+			
+			<!--位置3：错题类型改动-->
+			<div class="main_content">
+				<!--test-type类名新增-->
+			    <div class="panel panel-default test-type">
+					<div class="panel-body">
+						<dl  class="dl-horizontal  my-type">
+							<dt class="dl-hidden">题型</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">选择题</a>
+								<a href="">填空题</a>
+								<a href="">解答题</a>
+								<a href="">完形填空</a>
+								<a href="">阅读理解</a>
+								<a href="">判断题</a>
+							</dd>
+						</dl>
+						<dl  class="dl-horizontal  my-type">
+							<dt class="dl-hidden">难度</dt>
+							<dd class="list-types dl-hidden"><a href="" class="active">全部</a>
+								<a href="">容易</a>
+								<a href="">较易</a>
+								<a href="">中等</a>
+								<a href="">较难</a>
+								<a href="">困难</a>
+							</dd>
+						</dl>
+						<dl  class="dl-horizontal  my-type">
+							<dt class="dl-hidden">类型</dt>
+							<dd class="list-types dl-hidden"><a href="#" class="active">全部</a>
+								<a href="#" >校本题</a>
+								<a href="#" >单元测验</a>
+								<a href="#" >真题</a>
+								<a href="#" >模拟题</a>
+								<a href="#" >校本题</a>
+								<a href="#" >单元测验</a>
+								<a href="#" >真题</a>
+								<a href="#" >模拟题</a>
+								<a href="#" >校本题</a>
+								<a href="#" >单元测验</a>
+								<a href="#" >真题</a>
+								<a href="#" >模拟题</a>
+							</dd>
+						</dl>
+						<!--p标签删除  已删除  展开不需要-->
+						<!--<a href="#" class="text-right shareTypeBtn">展开<span class="glyphicon glyphicon-menu-up"></span></a>-->
+					
+					</div>
+				</div>
+				
+				<!--位置4：待消错导航改动 新增结构搜索 -->
+				<!--新增point-nav类名 导航结构改变-->
+				<div class="panel panel-default point-nav">
+					<div class="panel-body">
+					    <div class="row">
+			                <div class="col-md-4 two-btn">
+			                    <div class="sort-buttons btn-group" data-toggle="buttons">
+			                    	<!--类名btn-success删除-->
+									<label class="btn active">
+										<input type="radio" name="options" id="option1" autocomplete="off" checked>组卷次数
+										<span class="glyphicon glyphicon-arrow-up"></span>
+									</label>
+									<label class="btn">
+										<input type="radio" name="options" id="option2" autocomplete="off">浏览次数
+										<span class="glyphicon glyphicon-arrow-up"></span>
+									</label>
+								</div>
+								<!--修改待消错按钮部分-->
+<!--								<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" class="wrong-radio" value="option1" checked="checked"> 待消错
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" class="wrong-radio" value="option2"> 历史消错
+								</label>-->
+			                </div>
+			               
+			               	<!--新增关键词搜索部分-->
+			                <div class="col-md-4 search">
+			               		<div class="input-group">
+								      <input type="text" class="form-control" placeholder="关键字">
+								      <span class="input-group-btn">
+								        	<button class="btn btn-default glyphicon glyphicon-search search_icon" type="button"></button>
+								      </span>
+				    			</div>
+			                </div>
+			               
+			                <!--新增num-page类名  以及page按钮修改\新增类名page_btn   隐藏试题不需要-->
+			                <div class="col-md-4 text-center num-page">
+									<!--<button class="btn btn-default glyphicon glyphicon-triangle-left"></button>-->
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1">隐藏已选题
+								</label>
+								<lable class="pull-right">
+									<label class="page_btn">&lt;</label>
+									<label class="orange">1</label>/100
+									<label class="page_btn">&gt;</label>
+									<!--<button class="btn btn-default glyphicon glyphicon-triangle-right"></button>-->
+								</label>
+			                </div>
+					    </div>
+					</div>
+		        </div>
+				
+				<!--位置5：自动添加错题内容部分修改-->
+				<!--自动生成页面部分-->
+				<div>
+					<div class="panel panel-default auto_make_content">
+					    <div class="panel-body paper-content">
+					        <a href="#" data-toggle="modal" data-target="#myModal1" class="error">挑错</a>
+					        <h5><span class="paper_type"></span>试题来源：2008重庆中考数学考试题</h5>
+					        <p>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是（   ）。</p>
+				            <ul class="list-inline wrong-list">
+				                <li>A. M、N、P</li>
+				                <li class="wrong">B .M、P、Q</li>
+				                <li class="correct">C .N、P、Q</li>
+				                <li>D .M、N、Q</li>
+				            </ul>
+					    </div>
+					    
+					    <!--错题内容一系列按钮的修改-->
+						<div class="panel-footer paper-content-footer content-btn">
+						    <div class="row">
+					  			<!--新增类名color-g-->
+								<div class="col-md-7 text-left color-g content-describe">
+									难度：
+									<label class="star-width">
+										<span class="glyphicon glyphicon-star"></span>
+									</label>
+									组卷次数：<label>2</label>&nbsp;
+									浏览次数：<label>3</label>
+								</div>
+								<!--新增类名test-btn-group-->
+						        <div class="col-md-5 addBox_fath test-btn-group text-right">
+							  		<a class="look-analysis color-change-green" href="analysis.html" value="singalSelect" target="_blank">查看解析</a>
+							  		<button type="button" class="text-left collectionTest color-change-green ">收藏试题</button>
+							  		<button type="button" class="text-left addBox color-change-green ">加入试题篮</button>
+	<!--						  		<button type="button" class="text-left wrong-btn color-change-yellow" >消错</button>
+							  		<button type="button" class="text-left delet-h color-change-yellow" >删除历史</button>-->
+					  			</div>
+					  			
+			  				</div>
+						</div>
+					
+					</div>
+			              
+			        <div class="panel panel-default auto_make_content">
+					  <div class="panel-body paper-content">
+					       <a href="#" data-toggle="modal" data-target="#myModal1" class="error">挑错</a>
+					       <a href="analysisDetail.html" class="lookBtn">查看详情<span class="glyphicon glyphicon-menu-down"></span></a>
+					        <h5>试题来源：2008重庆中考数学考试题</h5>
+					        <p>Hainan is in the south(南方)of China. The weather there is<u>&nbsp;&nbsp;1&nbsp;&nbsp;</u>from that of the north(北方)of China. There <u>&nbsp;&nbsp;2&nbsp;&nbsp;</u>no winter in Hainan. It is not<u>&nbsp;&nbsp;3&nbsp;&nbsp;</u> all year round. Even in December, It isn’t cold. Many people go there in winter,<u>&nbsp;&nbsp;4&nbsp;&nbsp;</u>it’s cold in the north of China. In summer, it’s very hot. It’s usually sunny, but it often <u>&nbsp;&nbsp;5&nbsp;&nbsp;</u> suddenly(突然). So people often take raincoats at the<u>&nbsp;&nbsp;6&nbsp;&nbsp;</u> time.Hainan is a good <u>&nbsp;&nbsp;7&nbsp;&nbsp;</u> to go for holidays and have fun. We can <u>&nbsp;&nbsp;8&nbsp;&nbsp;</u> fishing,swimming and so on. When we want <u>&nbsp;&nbsp;9&nbsp;&nbsp;</u> a rest, we can lie on the beach(海滩)and <u>&nbsp;&nbsp;10&nbsp;&nbsp;</u> the blue sky(天空) and the white clouds.</p>
+							<ul class="list-unstyled unshow wrong-list-1">
+					              <li>1.<label>A  same </label> <label>B  same</label><label>C  same </label> </li>
+					              <li>2.<label class="wrong">A  same </label> <label class="correct">B  same</label><label>C  same </label></li>
+					              <li>3.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					              <li>4.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					              <li>5.<label>A  same </label> <label>B  same</label><label>C  same </label> </li>
+					              <li>6.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					              <li>7.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					              <li>8.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					              <li>9.<label>A  same </label> <label>B  same</label><label>C  same </label> </li>
+					              <li>10.<label>A  same </label> <label>B  same</label><label>C  same </label></li>
+					             
+					        </ul>
+					  </div>
+						<!--错题内容一系列按钮的修改-->
+						<div class="panel-footer paper-content-footer content-btn">
+						    <div class="row">
+					  			<!--新增类名color-g-->
+								<div class="col-md-7 text-left color-g content-describe">
+									难度：
+									<label class="star-width">
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</label>
+									组卷次数：<label>2</label>&nbsp;
+									浏览次数：<label>3</label>
+								</div>
+								<!--新增类名test-btn-group-->
+						        <div class="col-md-5 addBox_fath test-btn-group text-right">
+							  		<a class="look-analysis color-change-green" href="analysis-tizu.html" value="singalSelect" target="_blank">查看解析</a>
+							  		<button type="button" class="text-left collectionTest color-change-green">收藏试题</button>
+							  		<button type="button" class="text-left addBox color-change-green">加入试题篮</button>
+	<!--						  		<button type="button" class="text-left wrong-btn color-change-yellow" >消错</button>
+							  		<button type="button" class="text-left delet-h color-change-yellow" >删除历史</button>-->
+					  			</div>
+			  				</div>
+						</div>
+					
+			        </div>
+	
+					<div class="panel panel-default auto_make_content">
+					  <div class="panel-body paper-content">
+					        <a href="#" data-toggle="modal" data-target="#myModal1" class="error">挑错</a>
+					        <h5>试题来源：2008重庆中考数学考试题</h5>
+					        <p>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是（   ）。</p>
+					  </div>
+						<!--错题内容一系列按钮的修改-->
+						<div class="panel-footer paper-content-footer content-btn">
+						    <div class="row">
+					  			<!--新增类名color-g-->
+								<div class="col-md-7 text-left color-g content-describe">
+									难度：
+									<label class="star-width">
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</label>
+									组卷次数：<label>2</label>&nbsp;
+									浏览次数：<label>3123</label>
+								</div>
+								<!--新增类名test-btn-group-->
+						        <div class="col-md-5 addBox_fath test-btn-group text-right">
+							  		<a class="look-analysis color-change-green" href="analysis.html" value="singalSelect" target="_blank">查看解析</a>
+							  		<button type="button" class="text-left collectionTest color-change-green">收藏试题</button>
+							  		<button type="button" class="text-left addBox color-change-green">加入试题篮</button>
+	<!--						  		<button type="button" class="text-left wrong-btn color-change-yellow" >消错</button>
+							  		<button type="button" class="text-left delet-h color-change-yellow" >删除历史</button>-->
+					  			</div>
+			  				</div>
+						</div>
+					
+					</div>
+					
+					<div class="panel panel-default auto_make_content">
+					  <div class="panel-body paper-content">
+					        <a href="#" data-toggle="modal" data-target="#myModal1" class="error">挑错</a>
+					        <h5>试题来源：2008重庆中考数学考试题</h5>
+					        <p>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是（   ）。</p>
+					  </div>
+						<!--错题内容一系列按钮的修改-->
+						<div class="panel-footer paper-content-footer content-btn">
+						    <div class="row">
+					  			<!--新增类名color-g-->
+								<div class="col-md-7 text-left color-g content-describe">
+									难度：
+									<label class="star-width">
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+										<span class="glyphicon glyphicon-star"></span>
+									</label>
+									组卷次数：<label>2</label>&nbsp;
+									浏览次数：<label>3125454</label>
+								</div>
+								<!--新增类名test-btn-group-->
+						        <div class="col-md-5 addBox_fath test-btn-group text-right">
+							  		<a class="look-analysis color-change-green" href="analysis.html" value="singalSelect" target="_blank">查看解析</a>
+							  		<button type="button" class="text-left collectionTest color-change-green">收藏试题</button>
+							  		<button type="button" class="text-left addBox color-change-green">加入试题篮</button>
+	<!--						  		<button type="button" class="text-left wrong-btn color-change-yellow" >消错</button>
+							  		<button type="button" class="text-left delet-h color-change-yellow" >删除历史</button>-->
+					  			</div>
+			  				</div>
+						</div>
+					
+					</div>
+				</div>
+				<!--<nav class="text-center pages">
+					  <ul class="list-inline">
+					    <li>
+					      <a href="#">首页
+					      </a>
+					    </li>
+					    <li>
+					      <a href="#">上一页
+					      </a>
+					    </li>
+					    <li>
+					      <a href="#">下一页
+					      </a>
+					    </li>
+					    <li>
+					      <a href="#">尾页
+					      </a>
+					    </li>
+					    <li class="text">
+					    	跳转：<input type="text" value="1" />页
+					    	<a href="">跳转</a>
+					    </li>
+					    <li class="text">共4页</li>
+					    <li class="text">当前第1页</li>
+					    <li class="text">总记录数：34</li>
+					  </ul>
+				</nav>-->
+				<!--分页-->
+				<div id="page">
+					<a href="#">上一页</a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<span>...</span>
+					<a href="#">20</a>
+					<a href="#">下一页</a>
+				</div>
+		 	
+			</div>
+        </div>
+</div>
+ <div class="to-top">
+		<span class="glyphicon glyphicon-menu-up"></span>
+		<p>返回顶部</p>
+ 	</div> 
+<!--是否删除-->
+<div class="modal fade " id="myModal-delet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+        <p class="text-center"> 是否确定删除？</p>
+        <p class="text-center">
+        	 <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+        	<button type="button" class="btn btn-default">取消</button>
+        </p>
+    </div>
+  </div>
+</div>
+
+<!--挑错-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         <h4 class="modal-title">挑错</h4>
+      </div>
+      <div class="modal-body">
+             <p>错误描述</p>
+             <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-green" data-dismiss="modal">提交</button>
+        <button type="button" class="btn btn-grey">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--导出word-->
+<div class="modal fade" id="myModal-ex-word" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+             <div class="mistake_history test_show">
+				<div class="history_title">
+					<span>导出word</span>
+					<button data-dismiss="modal" aria-label="Close">&times;</button>
+				</div>
+				<div class="history_content test_detail">
+				<div class="test_choose">
+					<p>请选择要导出的文档内容(可多选)</p>
+					<span><input type="checkbox" name="test_choose" value="知识点" class="test_point" checked="checked">知识点</span>
+					<span><input type="checkbox" name="test_choose" value="作答情况" class="test_answer" >作答情况</span>
+					<span><input type="checkbox" name="test_choose" value="答案与解析" class="test_analysis">答案与解析</span>
+				</div>
+				<div>
+					<ul>
+					    <li>
+					    	<span class="show_border1"></span>
+					    	<dl>
+					    		<dt>题目：</dt>
+					    		<dd>设集合M={大于0小于1的有理数}，N={小于1050的正整数}，P={定圆c的内接三角形}，Q={所有能被7整除的数}，其中无限集是</dd>
+					    	</dl>
+					    </li>
+						<li>
+							<span class="show_border2"></span>
+					    	<dl>
+					    		<dt>知识点：</dt>
+					    		<dd>知识点的具体内容,知识点的具体内容</dd>
+					    	</dl>
+					    </li>
+					    <li>
+					    	<span class="show_border3"></span>
+					    	<dl>
+					    		<dt>用户答案：</dt>
+					    		<dd>A. M、N、P</dd>
+					    	</dl>
+					    </li>
+					    <li>
+					   	 	<span class="show_border4"></span>
+					    	<dl>
+					    		<dt>试题解析：</dt>
+					    		<dd>解析的具体内容解析的具体内容解析的具体内容解析的具体内容</dd>
+					    	</dl>
+					    </li>
+					</ul>
+				</div>
+				<p class="test_confirm">
+				<button class="btn btn_confirm" data-dismiss="modal">确认导出</button></p>
+				</div>
+			</div>
+      	</div>
+    </div>
+  </div>
+</div>
+
+<!--练习册-->
+<!--<div class="panel panel-default testbox">
+  <div class="panel-body">
+       <p class="text-center">
+       <a href="studentDoTest.html">
+       <button class="btn btn-green">试题练习</button></a>
+       <button class="btn btn-green">导出word</button>
+       </p>
+  </div>
+   <div class="panel-footer text-right foot cart">练习册（10）</div>
+</div>-->
+
+<!--错题显示放大-->
+<div class="modal fade" id="myModal-h-error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+      <div class="modal-body">
+      	<div class="img_show">
+      		<img scr="" class="img_max"/>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--试题篮-->
+<div class="panel panel-default testbox">
+  <div class="panel-body">
+       <p>一、选择题：<span class="change-color">&nbsp;10&nbsp;</span>题</p>
+       <p>二、完型填空：<span class="change-color">&nbsp;10&nbsp;</span>题</p>
+       <p>三、阅读理解：<span class="change-color">&nbsp;10&nbsp;</span>题</p>
+       <p class="text-center testbox-btn">
+       <a href="lookPaper.html?edit=true"><button class="btn btn-green">生成试卷</button></a>
+       <button class="btn btn-yellow">清空</button>
+       </p>
+  </div>
+   <div class="panel-footer text-right foot cart">试题篮（10）</div>
+</div>
+
+
+<script src="../../common/js/jquery-1.11.2.min.js"></script>
+<script src="../../common/js/respond.min.js"></script>
+<script src="../../common/js/bootstrap.min.js"></script>
+<script src="../../common/js/common.js"></script>
+<script src="../../common/js/jquery.ztree.core.min.js"></script>
+<script src="../../common/js/jquery.fly.min.js"></script>
+<script src="../../common/js/tree.js"></script>
+<script src="js/selectTest.js"></script>
+<script src="../navigation/js/navigation.js"></script>
+</body>
+</html>

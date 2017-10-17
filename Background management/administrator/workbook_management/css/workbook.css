@@ -1,0 +1,204 @@
+.basic_message_box{
+    overflow:hidden;
+    margin-top:20px;
+    border:1px solid #ddd;
+}
+.basic_message_title{
+    padding:14px;
+}
+
+.nav-tabs>li.active>a{
+    background-color:#44B3AD;
+    color:#fff;
+}
+.basic_message_con{
+    padding:20px 30px;
+}
+.distance_l{
+    display: inline-block;
+    margin-left:10px;
+    vertical-align: top;
+
+}
+.basic_message_lists li{
+    line-height:30px;
+    margin-bottom:10px;
+}
+.basic_message_lists li label{
+    display: inline-block;
+    width:60px;
+    text-align: right;
+}
+.basic_message_lists li input{
+    width:800px;
+    border:1px solid #ddd;
+}
+.distance_l textarea{
+    width:800px;
+    border:1px solid #ddd;
+}
+.distance_l select{
+    padding:4px ;
+    border:1px solid #ddd;
+}
+.select_file{
+    margin-right:6px;
+}
+.comfirm{
+    width:44px;
+    margin:0 auto;
+}
+.comfirm .btn{
+    background: #44B3AD;
+    border-color: #44B3AD;
+    color:#fff;
+}
+
+
+/*上传教材目录样式*/
+.pl_upload{
+    margin:20px 0 100px;
+}
+.pl_upload_box{
+   width:100%;
+   margin-top:10px;
+}
+.pl_upload_header{
+    min-height: 60px;
+    padding-left:20px;
+    background-color: #44B3AD;
+    color:#fff;
+}
+.pl_upload_header span{
+    display:block;
+    font-size: 18px;
+    padding:6px 0 3px;
+}
+.pl_upload_header i{
+    display:block;
+    padding:3px 0 2px;
+    font-size: 14px;
+    font-style: normal;
+}
+.pl_upload_content{
+    box-sizing:content-box;
+}
+.pl_upload_filelist_header{
+    background-color: #dfdfdf;
+    padding:8px 32px;
+    color:#42454A;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #cdcdcd;
+    overflow: hidden;
+}
+.pl_upload_file_name{
+    float: left;
+}
+.pl_upload_file_status{
+    float: right;
+}
+.pl_upload_file_status span{
+    display: inline-block;
+    margin:0 24px;
+}
+.pl_upload_file_list{
+    min-height: 250px;
+    overflow-y: scroll;
+    margin-bottom: 0;
+    background-color: #f5f5f5;
+}
+.pl_upload_file_list li{
+    padding:10px 8px;
+}
+.pl_upload_droptext{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 165px;
+}
+.pl_upload_footer{
+    padding:8px 8px;
+    border-top:1px solid #fff;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color:#DFDFDF;
+    color:#42454A;
+}
+.pl_upload_file_name_btn{
+    float: left;
+}
+.pl_upload_file_name_btn .pl_upload_button{
+    display: inline-block;
+    margin:0 10px;
+    padding:2px 8px 3px 20px;
+    border:1px solid #bababa;
+    color:#42454a;
+    border-radius: 3px;
+    background: #f3f3f3 url("../../../common/img/buttons.png") no-repeat 0 center;
+}
+.pl_upload_file_name_btn .pl_upload_add{
+    background-position: -180px center;
+}
+.pl_upload_file_name_btn .pl_upload_disabled{
+    background: #EDEDED url("../../../common/img/buttons-disabled.png") no-repeat 0 center;
+}
+
+
+/*内容管理页面样式*/
+.content_management_con{
+   overflow: hidden;
+    padding:20px;
+}
+.textbook_left_area{
+    float: left;
+    width:250px;
+    height:300px;
+    margin-right:10px;
+    border:1px solid #dcdcdc;
+}
+.test_list_right_area{
+    float: left;
+    width: 838px;
+    border: 1px solid #dcdcdc;
+}
+.test_content_lists{
+    margin-bottom: 1px;
+}
+.test_content_lists li{
+    overflow: hidden;
+   padding:10px 50px 6px 20px;
+    border-bottom:1px solid #dcdcdc;
+}
+.test_content_lists li .test_name{
+    float: left;
+    line-height: 32px;
+}
+.test_content_lists li .test_watch{
+    float: right;
+}
+.test_watch a{
+    display: inline-block;
+    padding:6px 18px;
+    background-color:#44B3AD;
+    color:#fff;
+    border-radius:3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
